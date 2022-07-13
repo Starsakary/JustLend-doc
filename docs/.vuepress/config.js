@@ -15,6 +15,7 @@ module.exports = {
         sidebarDepth: 0,
         nav: [
             {text: 'App', link: 'https://justlend.org/#/home'},
+            {text: 'Home', link: '/'},
             {text: 'FAQ', link: '/faq/'},
             {text: 'Governance', link: '/governance/'},
             {text: 'Risk', link: '/risk/'}
