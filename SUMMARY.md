@@ -12,6 +12,7 @@
 
 ## Governance
 
+* [Introduction](governance/introduction.md)
 * [How to redeem votes?](governance/how-to-redeem-votes.md)
 * [How to vote?](governance/how-to-vote.md)
 * [How to withdraw JST?](governance/how-to-withdraw-jst.md)
