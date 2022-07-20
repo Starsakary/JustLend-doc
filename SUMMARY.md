@@ -37,3 +37,11 @@
 ## Governance
 
 * [Page 1](governance/page-1.md)
+
+## Risk
+
+* [Page 2](risk/page-2.md)
+
+## DEVELOPERS
+
+* [Page 3](developers/page-3.md)
