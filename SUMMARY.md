@@ -50,9 +50,9 @@
 
 ## DEVELOPERS
 
-* [Developer Docs](developers/developer-docs/README.md)
-  * [JustLend Documentation](developers/developer-docs/docs/README.md)
-    * [Introduction to JustLend](developers/developer-docs/docs/faq.md)
+* [Developer Docs](developers/page-3/README.md)
+  * [JustLend Documentation](docs/README.md)
+    * [Introduction to JustLend](developers/page-3/docs/faq.md)
 * [Hackathons](developers/hackathons.md)
 
 ## Anouncement
