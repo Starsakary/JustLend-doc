@@ -19,7 +19,8 @@
 
 ## Risk
 
-* [Page 2](risk/page-2.md)
+* [Asset Risk](risk/asset-risk.md)
+* [Liquidity Risk](risk/liquidity-risk.md)
 
 ## DEVELOPERS
 
