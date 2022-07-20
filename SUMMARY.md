@@ -10,6 +10,10 @@
 * [Page 4](how-to-start/page-4.md)
 * [Page 5](how-to-start/page-5.md)
 
+## Anouncement
+
+* [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
+
 ## Governance
 
 * [Introduction](governance/introduction.md)
