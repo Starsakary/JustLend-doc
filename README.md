@@ -8,7 +8,7 @@ JustLend DAO protocol is a TRON-powered money market protocol aimed at establish
 
 ## Core Architecture of JustLend DAO
 
-![](.gitbook/assets/image.png)
+![](https://lh4.googleusercontent.com/E3-7mdiJ7oazmDif0dCPPpacv3O3yRBVF0i71GLhpr908Aq3e7JcJ1mN8TTFteNBqfTG7mHQGAK2CTBlL5Hqb0pksAa0F5NtHBKbLzmZGJFdcYWmC\_sani6U3BOrQYSrQrBb-bG97RgEd0Y2cOJ0Jyg)
 
 ## Core Logic of JustLend DAO&#x20;
 
