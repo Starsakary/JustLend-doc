@@ -37,7 +37,7 @@
 ## DEVELOPERS
 
 * [Developer Docs](developers/page-3/README.md)
-  * [JustLend Documentation](developers/developer-docs/docs.md)
+  * [API](developers/developer-docs/api.md)
 * [Hackathons](developers/hackathons.md)
 
 ## Anouncement
@@ -46,19 +46,19 @@
 
 ## FAQ
 
-* [TroubleShooting](faq/troubleshooting.md)
-* [Introduction to JustLend](faq/faq.md)
-* [Swap & Repay with collateral (V2 market only)](faq/swap-repay.md)
-* [Flash Loans](faq/flash-loans.md)
-* [Migration and Staking](faq/migration-staking.md)
-* [JustLend V3 Features](faq/v3-features.md)
-* [Governance](faq/governance.md)
-* [Testing JustLend Protocol](faq/testing.md)
+* [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
+* [Introduction to JustLend](developers/page-3/docs/faq.md)
+* [Swap & Repay with collateral (V2 market only)](developers/page-3/asset/swap-repay.md)
+* [Flash Loans](risk/liquidity-risk/atoken-valuation/flash-loans.md)
+* [Migration and Staking](risk/liquidity-risk/historical-utilisation/migration-staking.md)
+* [JustLend V3 Features](developers/page-3/asset/methodology/v3-features.md)
+* [Governance](developers/page-3/asset/risk-per-asset/governance.md)
+* [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
 
 ***
 
 * [Others](others/README.md)
-  * [AMM](others/amm.md)
+  * [AMM](developers/page-3/asset/amm/README.md)
   * [JustLend Economics](developers/page-3/asset/governance.md)
   * [Ecosystem Overview](developers/page-3/asset/risk-params/eco-overview.md)
   * [Flashpaper](developers/page-3/asset/risk-per-asset/flashpaper.md)
