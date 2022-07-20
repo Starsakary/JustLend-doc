@@ -19,8 +19,9 @@
 
 ## Risk
 
-* [Asset Risk](risk/asset-risk.md)
-* [Liquidity Risk](risk/liquidity-risk.md)
+* [Asset Risk](risk/page-2.md)
+* [Liquidity Risk](risk/liquidity-risk/README.md)
+  * [What will trigger liquidation?](risk/liquidity-risk/what-will-trigger-liquidation.md)
 
 ## DEVELOPERS
 

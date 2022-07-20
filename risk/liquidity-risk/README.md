@@ -1,0 +1,3 @@
+# Liquidity Risk
+
+JustLend DAO requires users to deposit a certain amount of assets as collateral when they are borrowing. The amount of borrowed asset is determined by the collateral factor, i.e. max loan = collateral value \* collateral factor.As crypto assets are subject to great market volatility, collateral value changes all the time. Therefore, JustLend DAO monitors the overall health of each borrowing account in real time and automatically liquidates accounts whose health value is lower than 1. Health value = value of the total collateral (converted and denoted in TRX) / value of the total borrowed asset (converted and denoted in TRX).
