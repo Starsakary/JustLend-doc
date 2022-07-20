@@ -2,8 +2,7 @@
 
 ## What is JustLend?
 
-JustLend is a decentralised non-custodial liquidity market protocol where users can participate as depositors or borrowers. Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion.
-Please join the JustLend community Discord server; the JustLend team and members of the community look forward to helping you understand and use JustLend.
+JustLend is a decentralised non-custodial liquidity market protocol where users can participate as depositors or borrowers. Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion. Please join the JustLend community Discord server; the JustLend team and members of the community look forward to helping you understand and use JustLend.
 
 ## Why JustLend?
 

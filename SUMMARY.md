@@ -1,13 +1,13 @@
 # Table of contents
 
-* [WHAT IS JUSTLEND](README.md)
+* [JUSTLEND INTRO](README.md)
 
 ## How to start
 
-* [Depositing & Earning](docs/faq/deposit-earning.md)
-* [Page 4](how-to-start/page-4/README.md)
-  * [Borrowing](docs/faq/borrowing.md)
-  * [Liquidations](docs/faq/liquidations.md)
+* [Depositing & Earning](how-to-start/deposit-earning/README.md)
+  * [Borrowing](how-to-start/deposit-earning/borrowing.md)
+  * [Liquidations](how-to-start/deposit-earning/liquidations.md)
+* [Page 4](how-to-start/page-4.md)
 * [Page 5](how-to-start/page-5.md)
 
 ## Governance
