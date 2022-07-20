@@ -38,6 +38,7 @@
 
 * [Developer Docs](developers/page-3/README.md)
   * [API](developers/developer-docs/api.md)
+  * [JustLend DAO Whitepaper](developers/developer-docs/justlend-dao-whitepaper.md)
 * [Hackathons](developers/hackathons.md)
 
 ## Anouncement
