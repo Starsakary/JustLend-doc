@@ -22,37 +22,37 @@
 ## Risk
 
 * [Asset Risk](risk/page-2.md)
-  * [Adding an Asset](risk/asset-risk/adding-asset.md)
-  * [Methodology](risk/asset-risk/methodology.md)
+  * [Adding an Asset](developers/page-3/asset/adding-asset/README.md)
+  * [Methodology](developers/page-3/asset/methodology/README.md)
   * [Price Discovery](developers/page-3/asset/price-discovery.md)
-  * [Risk Parameters](risk/asset-risk/risk-params.md)
-  * [Risks per Asset](risk/asset-risk/risk-per-asset.md)
+  * [Risk Parameters](developers/page-3/asset/risk-params/README.md)
+  * [Risks per Asset](developers/page-3/asset/risk-per-asset/README.md)
 * [Liquidity Risk](risk/liquidity-risk/README.md)
-  * [Historical Utilisation](risk/liquidity-risk/historical-utilisation.md)
+  * [Historical Utilisation](risk/liquidity-risk/historical-utilisation/README.md)
   * [Borrow Interest Rate](risk/liquidity-risk/borrow-interest-rate.md)
   * [What will trigger liquidation?](risk/liquidity-risk/what-will-trigger-liquidation.md)
   * [aToken Liquidity](risk/liquidity-risk/atoken-liquidity.md)
-  * [aToken Valuation](risk/liquidity-risk/atoken-valuation.md)
+  * [aToken Valuation](risk/liquidity-risk/atoken-valuation/README.md)
 
 ***
 
 * [Others](others/README.md)
-  * [Swap & Repay with collateral (V2 market only)](others/swap-repay.md)
-  * [Testing JustLend Protocol](others/testing.md)
-  * [AMM](others/amm/README.md)
-    * [TroubleShooting](others/amm/troubleshooting.md)
-  * [JustLend V3 Features](others/v3-features.md)
-  * [JustLend Economics](others/governance.md)
-  * [Ecosystem Overview](others/eco-overview.md)
-  * [Flashpaper](others/flashpaper.md)
-  * [Governance](others/governance-1.md)
-  * [Incentives](others/incentives.md)
-  * [Policies](others/policies.md)
-  * [Safety Module](others/safety-module.md)
-  * [Terminology](others/terminology.md)
-  * [Risk](others/risk.md)
-  * [Flash Loans](others/flash-loans.md)
-  * [Migration and Staking](others/migration-staking.md)
+  * [Swap & Repay with collateral (V2 market only)](developers/page-3/asset/swap-repay.md)
+  * [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
+  * [AMM](developers/page-3/asset/amm/README.md)
+    * [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
+  * [JustLend V3 Features](developers/page-3/asset/methodology/v3-features.md)
+  * [JustLend Economics](developers/page-3/asset/governance.md)
+  * [Ecosystem Overview](developers/page-3/asset/risk-params/eco-overview.md)
+  * [Flashpaper](developers/page-3/asset/risk-per-asset/flashpaper.md)
+  * [Governance](developers/page-3/asset/risk-per-asset/governance.md)
+  * [Incentives](developers/page-3/asset/risk-per-asset/incentives.md)
+  * [Policies](developers/page-3/asset/risk-per-asset/policies.md)
+  * [Safety Module](developers/page-3/asset/risk-per-asset/safety-module.md)
+  * [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
+  * [Risk](developers/page-3/asset/risk.md)
+  * [Flash Loans](risk/liquidity-risk/atoken-valuation/flash-loans.md)
+  * [Migration and Staking](risk/liquidity-risk/historical-utilisation/migration-staking.md)
 
 ## DEVELOPERS
 
@@ -65,4 +65,4 @@
 
 * [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
 
-## Group 1
+## FAQ
