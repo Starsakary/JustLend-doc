@@ -8,6 +8,8 @@ Selling your assets means closing your position on that particular asset. Hence,
 
 Before borrowing you need to deposit any asset to be used as collateral. After this, simply head to the Borrow section and click on “Borrow” for the asset you want to borrow. Set the amount you need based on your available deposits that would be used as a collateral for the loan. Select either stable or variable rate and confirm your transaction. You can always change your rate afterwards as many times as you want.
 
+[How To Borrow - Step by Step](https://justlendorg.zendesk.com/hc/en-us/articles/360052662152-How-to-borrow-tokens-)
+
 ## How much I can borrow?
 
 The maximum amount you can borrow depends on the value you have deposited and the available liquidity. For example, you can’t borrow an asset if there is not enough liquidity or if your health factor doesn’t allow you to. You can find every collateral available and its specific parameters for borrowing in the risk parameters section.
@@ -49,6 +51,8 @@ There is no fixed time period to pay back the loan. As long as your position is 
 ## How do I payback the loan?
 
 In order to payback the loan you simply go to the Borrowings section of your dashboard and click on the repay button for the asset you borrowed and want to repay. Select the amount to pay back and confirm the transaction.
+
+[How to Repay - Step By Step ](https://justlendorg.zendesk.com/hc/en-us/articles/360053116711-How-to-repay-tokens-)
 
 ## How do I avoid liquidation?
 

@@ -4,10 +4,11 @@
 
 ## How to start
 
-* [Depositing & Earning](docs/faq/deposit-earning.md)
+* [Supply And Borrow](docs/faq/deposit-earning.md)
   * [Borrowing](docs/faq/borrowing.md)
   * [Liquidations](docs/faq/liquidations.md)
-* [Page 4](how-to-start/page-4.md)
+* [Mining Guide](how-to-start/mining-guide/README.md)
+  * ["Upcoming" and "Frozen" Mining Rewards Explained](how-to-start/mining-guide/upcoming-and-frozen-mining-rewards-explained.md)
 * [Page 5](how-to-start/page-5.md)
 
 ## Governance
