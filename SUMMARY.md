@@ -46,8 +46,8 @@
 
 ## FAQ
 
-* [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
 * [Introduction to JustLend](developers/page-3/docs/faq.md)
+* [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
 * [Swap & Repay with collateral (V2 market only)](developers/page-3/asset/swap-repay.md)
 * [Flash Loans](risk/liquidity-risk/atoken-valuation/flash-loans.md)
 * [Migration and Staking](risk/liquidity-risk/historical-utilisation/migration-staking.md)
