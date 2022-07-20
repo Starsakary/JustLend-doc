@@ -34,6 +34,10 @@
       * [Borrow Interest Rate](docs/risk/liquidity/borrow-interest-rate.md)
       * [Historical Utilisation](docs/risk/liquidity/historical-utilisation.md)
 
+## How to start
+
+* [Page 4](how-to-start/page-4.md)
+
 ## Governance
 
 * [Page 1](governance/page-1.md)
