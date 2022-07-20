@@ -40,22 +40,19 @@
     * [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
   * [Risk](developers/page-3/asset/risk.md)
 * [Liquidity Risk](risk/liquidity-risk/README.md)
+  * [Historical Utilisation](risk/liquidity-risk/historical-utilisation/README.md)
+    * [Migration and Staking](risk/liquidity-risk/historical-utilisation/migration-staking.md)
   * [Borrow Interest Rate](risk/liquidity-risk/borrow-interest-rate.md)
   * [What will trigger liquidation?](risk/liquidity-risk/what-will-trigger-liquidation.md)
   * [aToken Liquidity](risk/liquidity-risk/atoken-liquidity.md)
+  * [aToken Valuation](risk/liquidity-risk/atoken-valuation/README.md)
+    * [Flash Loans](risk/liquidity-risk/atoken-valuation/flash-loans.md)
 
 ## DEVELOPERS
 
 * [Page 3](developers/page-3/README.md)
-  * [Introduction](developers/page-3/liquidity.md)
   * [JustLend Documentation](docs/README.md)
-    * [aToken Liquidity](developers/page-3/docs/atoken-liquidity.md)
     * [Introduction to JustLend](developers/page-3/docs/faq.md)
-    * [aToken Valuation](developers/page-3/docs/atoken-valuation/README.md)
-      * [Flash Loans](developers/page-3/docs/atoken-valuation/flash-loans.md)
-    * [Borrow Interest Rate](developers/page-3/docs/borrow-interest-rate.md)
-    * [Historical Utilisation](developers/page-3/docs/historical-utilisation/README.md)
-      * [Migration and Staking](developers/page-3/docs/historical-utilisation/migration-staking.md)
 
 ## Anouncement
 
