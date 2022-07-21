@@ -19,6 +19,7 @@
 * [How to redeem votes?](governance/how-to-redeem-votes.md)
 * [How to vote?](governance/how-to-vote.md)
 * [How to withdraw JST?](governance/how-to-withdraw-jst.md)
+* [How to](governance/how-to.md)
 
 ## Risk
 
@@ -38,10 +39,10 @@
 ## DEVELOPERS
 
 * [Developer Docs](developers/page-3/README.md)
-  * [Backend API](developers/developer-docs/backend-api.md)
+  * [Backend API](developers/developer-docs/api.md)
   * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
   * [JustLend DAO Whitepaper](developers/developer-docs/justlend-dao-whitepaper.md)
-* [Bug Bounty](developers/bug-bounty.md)
+* [Bug Bounty](developers/hackathons.md)
 
 ## Anouncement
 
