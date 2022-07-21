@@ -2,6 +2,7 @@
 
 * [JUSTLEND DAO INTRO](README.md)
 * [JustLend DAO Whitepaper](justlend-dao-whitepaper.md)
+* [JustLend Dao Homepage](https://justlend.org/?lang=en-US#/home)
 
 ## How to start
 
@@ -39,7 +40,7 @@
 
 ## DEVELOPERS
 
-* [GitHub](developers/github.md)
+* [GitHub](https://github.com/justlend)
 * [Developer Docs](developers/page-3/README.md)
   * [Backend API](developers/developer-docs/api.md)
   * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
