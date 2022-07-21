@@ -50,9 +50,10 @@
 
 ## Anouncement
 
-* [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
-* [New Features](anouncement/new-features.md)
-* [Market Upgrade](anouncement/market-upgrade.md)
+* [New Features](anouncement/new-features/README.md)
+  * [Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets](anouncement/new-features/adjust-the-interest-model-and-the-token-borrow-cap-of-the-usdd-trx-markets.md)
+* [Market Upgrade](anouncement/market-upgrade/README.md)
+  * [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/market-upgrade/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
 
 ## FAQ
 
