@@ -39,6 +39,7 @@
 
 ## DEVELOPERS
 
+* [GitHub](developers/github.md)
 * [Developer Docs](developers/page-3/README.md)
   * [Backend API](developers/developer-docs/api.md)
   * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
@@ -46,7 +47,6 @@
 * [Test Net info](developers/test-net-info.md)
 * [Bug Bounty](developers/hackathons.md)
 * [Security and Audits](developers/security-and-audits.md)
-* [GitHub](developers/github.md)
 
 ## Anouncement
 
