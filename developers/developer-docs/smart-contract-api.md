@@ -2,7 +2,7 @@
 
 ## Smart Contract Address
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (4).png>)
 
 ### Query interface
 

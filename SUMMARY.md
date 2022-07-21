@@ -11,7 +11,6 @@
   * [Supplying](how-to-start/deposit-earning/supplying.md)
 * [Mining Guide](how-to-start/mining-guide/README.md)
   * ["Upcoming" and "Frozen" Mining Rewards Explained](how-to-start/mining-guide/upcoming-and-frozen-mining-rewards-explained.md)
-* [Page 5](how-to-start/page-5.md)
 
 ## Governance
 
