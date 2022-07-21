@@ -1,3 +1,3 @@
 # JustLend DAO Whitepaper
 
-[https://www.justlend.link/docs/justlend\_whitepaper\_en.pdf](https://www.justlend.link/docs/justlend\_whitepaper\_en.pdf)
+{% file src=".gitbook/assets/justlend_whitepaper_en.pdf" %}
