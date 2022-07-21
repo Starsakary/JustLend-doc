@@ -52,6 +52,7 @@
 
 * [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
 * [New Features](anouncement/new-features.md)
+* [Market Upgrade](anouncement/market-upgrade.md)
 
 ## FAQ
 
