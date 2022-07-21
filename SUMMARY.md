@@ -47,6 +47,7 @@
 * [Test Net info](developers/test-net-info.md)
 * [Bug Bounty](developers/hackathons.md)
 * [Security and Audits](developers/security-and-audits.md)
+* [GitHub](developers/github.md)
 
 ## Anouncement
 
@@ -58,8 +59,8 @@
 ## FAQ
 
 * [Introduction to JustLend](developers/page-3/docs/faq.md)
-* [What determines the Supply APY and Borrow APY?](faq/what-determines-the-supply-apy-and-borrow-apy.md)
-* [JustLend Economics](faq/governance.md)
+* [What determines the Supply APY and Borrow APY?](page-1/what-determines-the-supply-apy-and-borrow-apy.md)
+* [JustLend Economics](developers/page-3/asset/governance.md)
 * [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
 * [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
-* [Terminology](faq/terminology.md)
+* [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
