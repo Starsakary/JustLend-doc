@@ -58,25 +58,8 @@
 ## FAQ
 
 * [Introduction to JustLend](developers/page-3/docs/faq.md)
+* [What determines the Supply APY and Borrow APY?](faq/what-determines-the-supply-apy-and-borrow-apy.md)
+* [JustLend Economics](faq/governance.md)
 * [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
-* [Swap & Repay with collateral (V2 market only)](developers/page-3/asset/swap-repay.md)
-* [Flash Loans](risk/liquidity-risk/atoken-valuation/flash-loans.md)
-* [Migration and Staking](risk/liquidity-risk/historical-utilisation/migration-staking.md)
-* [JustLend V3 Features](developers/page-3/asset/methodology/v3-features.md)
-* [Governance](developers/page-3/asset/risk-per-asset/governance.md)
 * [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
-
-***
-
-* [Others](others/README.md)
-  * [AMM](developers/page-3/asset/amm/README.md)
-  * [JustLend Economics](developers/page-3/asset/governance.md)
-  * [Ecosystem Overview](developers/page-3/asset/risk-params/eco-overview.md)
-  * [Flashpaper](developers/page-3/asset/risk-per-asset/flashpaper.md)
-  * [Incentives](developers/page-3/asset/risk-per-asset/incentives.md)
-  * [Policies](developers/page-3/asset/risk-per-asset/policies.md)
-  * [Safety Module](developers/page-3/asset/risk-per-asset/safety-module.md)
-  * [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
-* [Page 1](page-1/README.md)
-  * [Risk](developers/page-3/asset/risk.md)
-  * [What determines the Supply APY and Borrow APY?](page-1/what-determines-the-supply-apy-and-borrow-apy.md)
+* [Terminology](faq/terminology.md)
