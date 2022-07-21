@@ -39,7 +39,7 @@
 
 ## DEVELOPERS
 
-* [\[GitHub\](https://github.com/justlend)](developers/github-https-github.com-justlend.md)
+* [GitHub](developers/github.md)
 * [Developer Docs](developers/page-3/README.md)
   * [Backend API](developers/developer-docs/api.md)
   * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
