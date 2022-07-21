@@ -15,11 +15,13 @@
 
 ## Governance
 
+* [JustLend DAO Proposals](governance/justlend-dao-proposals/README.md)
+  * [Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets](governance/justlend-dao-proposals/adjust-the-interest-model-and-the-token-borrow-cap-of-the-usdd-trx-markets.md)
 * [Introduction](governance/introduction.md)
-* [How to redeem votes?](governance/how-to-redeem-votes.md)
-* [How to vote?](governance/how-to-vote.md)
-* [How to withdraw JST?](governance/how-to-withdraw-jst.md)
-* [How to](governance/how-to.md)
+* [How to](governance/how-to/README.md)
+  * [How to redeem votes?](governance/how-to/how-to-redeem-votes.md)
+  * [How to vote?](governance/how-to/how-to-vote.md)
+  * [How to withdraw JST?](governance/how-to/how-to-withdraw-jst.md)
 
 ## Risk
 
