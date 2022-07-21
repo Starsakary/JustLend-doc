@@ -1,4 +1,4 @@
-# API
+# Backend API
 
 ## Backend API
 
@@ -10,7 +10,7 @@
 
 **Returns**:
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 ### Account Information&#x20;
 
@@ -22,15 +22,9 @@
 
 **Returns:**
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
-## Smart Contract API
-
-### Smart Contract Address
-
-![](<../../.gitbook/assets/image (4).png>)
-
-### Query Interface
+##
 
 
 

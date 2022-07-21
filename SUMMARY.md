@@ -1,6 +1,7 @@
 # Table of contents
 
 * [JUSTLEND DAO INTRO](README.md)
+* [JustLend DAO Whitepaper](justlend-dao-whitepaper.md)
 
 ## How to start
 
@@ -37,9 +38,10 @@
 ## DEVELOPERS
 
 * [Developer Docs](developers/page-3/README.md)
-  * [API](developers/developer-docs/api.md)
+  * [Backend API](developers/developer-docs/backend-api.md)
+  * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
   * [JustLend DAO Whitepaper](developers/developer-docs/justlend-dao-whitepaper.md)
-* [Hackathons](developers/hackathons.md)
+* [Bug Bounty](developers/bug-bounty.md)
 
 ## Anouncement
 
