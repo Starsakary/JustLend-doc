@@ -68,5 +68,5 @@
   * [Safety Module](developers/page-3/asset/risk-per-asset/safety-module.md)
   * [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
 * [Page 1](page-1/README.md)
-  * [Risk](page-1/risk.md)
+  * [Risk](developers/page-3/asset/risk.md)
   * [What determines the Supply APY and Borrow APY?](page-1/what-determines-the-supply-apy-and-borrow-apy.md)
