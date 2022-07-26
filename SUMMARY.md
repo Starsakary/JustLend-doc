@@ -35,8 +35,8 @@
   * [Historical Utilisation](risk/liquidity-risk/historical-utilisation/README.md)
   * [Borrow Interest Rate](risk/liquidity-risk/borrow-interest-rate.md)
   * [What will trigger liquidation?](risk/liquidity-risk/what-will-trigger-liquidation.md)
-  * [aToken Liquidity](risk/liquidity-risk/atoken-liquidity.md)
-  * [aToken Valuation](risk/liquidity-risk/atoken-valuation/README.md)
+  * [jToken Liquidity](risk/liquidity-risk/atoken-liquidity.md)
+  * [jToken Valuation](risk/liquidity-risk/atoken-valuation/README.md)
 
 ## DEVELOPERS
 
