@@ -8,7 +8,7 @@ Selling your assets means closing your position on that particular asset. Hence,
 
 Before borrowing you need to deposit any asset to be used as collateral. After this, simply head to the Borrow section and click on “Borrow” for the asset you want to borrow. Set the amount you need based on your available deposits that would be used as a collateral for the loan. Select either stable or variable rate and confirm your transaction. You can always change your rate afterwards as many times as you want.
 
-[How To Borrow - Step by Step](https://justlendorg.zendesk.com/hc/en-us/articles/360052662152-How-to-borrow-tokens-)
+[How To Borrow - Step by Step](https://justlend.gitbook.io/untitled/how-to-start/deposit-earning/borrowing/how-to-borrow-tokens)
 
 ## How much I can borrow?
 

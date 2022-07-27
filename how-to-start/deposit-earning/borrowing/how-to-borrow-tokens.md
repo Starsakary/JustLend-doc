@@ -2,7 +2,7 @@
 
 1.Find the token you wish to borrow in Markets Overview, and click on the Borrow button.
 
-&#x20;![](<../../../.gitbook/assets/图片 (2).png>)
+&#x20;![](<../../../.gitbook/assets/图片 (1).png>)
 
 2.Enter the amount you wish to borrow and click the Borrow button. Please pay attention to the borrowing limit and don't exceed the amount.
 
@@ -14,8 +14,8 @@
 
 borrowing.
 
-&#x20;![](<../../../.gitbook/assets/图片 (3).png>)
+&#x20;![](<../../../.gitbook/assets/图片 (2).png>)
 
 4.After confirmation, you will be notified that the transaction has been sent. You can go to My Borrow to check your Balance.
 
-![](<../../../.gitbook/assets/图片 (4).png>)![](<../../../.gitbook/assets/图片 (1).png>)
+![](<../../../.gitbook/assets/图片 (4).png>)![](../../../.gitbook/assets/图片.png)
