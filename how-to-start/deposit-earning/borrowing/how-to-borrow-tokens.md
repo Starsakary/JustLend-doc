@@ -14,8 +14,8 @@
 
 borrowing.
 
-&#x20;![](<../../../.gitbook/assets/图片 (2) (1) (1).png>)
+&#x20;![](<../../../.gitbook/assets/图片 (2) (1).png>)
 
 4.After confirmation, you will be notified that the transaction has been sent. You can go to My Borrow to check your Balance.
 
-![](<../../../.gitbook/assets/图片 (4) (1).png>)![](<../../../.gitbook/assets/图片 (4).png>)
+![](<../../../.gitbook/assets/图片 (4) (1).png>)![](<../../../.gitbook/assets/图片 (4) (2).png>)

@@ -12,6 +12,32 @@
 
 ![](<../../.gitbook/assets/image (2) (1).png>)
 
+```
+{
+	"code": 0,
+	"message": "SUCCESS",
+	"data": {
+		"tokenList": [{
+			"address": "TDchKqQ8T2BhGfL7m2DfWfxp5eqa1we5hu", //address of jToken
+			"underlyingAddress": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb", //address of the underlying
+			asset "underlyingDecimal": 6, //decimal of the underlying asset
+			"underlyingPriceInTrx": "1.000000", //price of the underlying asset (in TRX)
+			"symbol": "jTRX", //symbol of jToken
+			"underlyingSymbol": "TRX", //symbol of the underlying asset
+			"collateralFactor": "0.750000000000000000", //collateral factor
+			"reserveFactor": "0.100000000000000000", //reserve factor
+			"exchangeRate": "0.010004175484185673", //exchange rate between jToken and the
+			corresponding Token "borrowRate": "0.032076159971472000", //borrowing APY
+			"supplyRate": "0.003486211548048000", //supplying APY
+			"cash": "540965.907046000000000000", //amount of cash in the contract
+			"reserves": "27.193286000000000000", //amount of reserve in the contract
+			"totalBorrows": "74296.866915000000000000", //total borrowed amount
+			"totalSupply": "61497879.72507555", //total supply of jToken
+		}]
+	}
+}
+```
+
 ### Account Information&#x20;
 
 **GET**: https://openapi.just.network/lend/account&#x20;

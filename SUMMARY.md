@@ -89,3 +89,6 @@
 * [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
 * [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
 * [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
+* [What is net APY?](faq/what-is-net-apy.md)
+* [How to understand your risk value?](faq/how-to-understand-your-risk-value.md)
+* [What is jToken?](faq/what-is-jtoken.md)
