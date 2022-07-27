@@ -12,7 +12,7 @@
 
 ![](<../../.gitbook/assets/image (2) (1).png>)
 
-```
+```json
 {
 	"code": 0,
 	"message": "SUCCESS",
