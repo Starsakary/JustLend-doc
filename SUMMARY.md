@@ -25,6 +25,13 @@
   * [Increase the Collateral Factor of the USDD Market to 85%](governance/justlend-dao-proposals/increase-the-collateral-factor-of-the-usdd-market-to-85.md)
   * [Add USDD as a collateralizable asset](governance/justlend-dao-proposals/add-usdd-as-a-collateralizable-asset.md)
   * [Add BTT as a collateralizable asset](governance/justlend-dao-proposals/add-btt-as-a-collateralizable-asset.md)
+  * [Add USDC as a collateralizable asset](governance/justlend-dao-proposals/add-usdc-as-a-collateralizable-asset.md)
+  * [Add SUN as a collateralizable asset](governance/justlend-dao-proposals/add-sun-as-a-collateralizable-asset.md)
+  * [Lowering the Collateral Factor of SUNOLD Market to 25%](governance/justlend-dao-proposals/lowering-the-collateral-factor-of-sunold-market-to-25.md)
+  * [Add NFT Lending Market](governance/justlend-dao-proposals/add-nft-lending-market.md)
+  * [Adjusting the Reserve Factor of SUNOLD Market to 100%](governance/justlend-dao-proposals/adjusting-the-reserve-factor-of-sunold-market-to-100.md)
+  * [Add TUSD Lending Market](governance/justlend-dao-proposals/add-tusd-lending-market.md)
+  * [Add ETH Lending Market](governance/justlend-dao-proposals/add-eth-lending-market.md)
 
 ## Risk
 
