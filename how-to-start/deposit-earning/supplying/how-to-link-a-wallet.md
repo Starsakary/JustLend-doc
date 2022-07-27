@@ -2,7 +2,7 @@
 
 1.Click "Link Wallet" on the top left of the navigation bar
 
-&#x20;![](<../../../.gitbook/assets/图片 (19).png>)
+&#x20;![](<../../../.gitbook/assets/图片 (8).png>)
 
 2.Select "TronLink"
 
@@ -10,7 +10,7 @@ Note: If you haven't installed TronLink Chrome extension yet, you can press "Cli
 
 
 
-&#x20;![](<../../../.gitbook/assets/图片 (16).png>)
+&#x20;![](<../../../.gitbook/assets/图片 (19).png>)
 
 ![](<../../../.gitbook/assets/图片 (23).png>)
 
@@ -20,4 +20,4 @@ Note: If you haven't installed TronLink Chrome extension yet, you can press "Cli
 
 4.Once the wallet is successfully linked, your wallet address will be shown on the top left corner.
 
-![](<../../../.gitbook/assets/图片 (3).png>)
+![](<../../../.gitbook/assets/图片 (13).png>)
