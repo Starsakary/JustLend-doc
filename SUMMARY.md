@@ -24,6 +24,7 @@
   * [Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets](governance/justlend-dao-proposals/adjust-the-interest-model-and-the-token-borrow-cap-of-the-usdd-trx-markets.md)
   * [Increase the Collateral Factor of the USDD Market to 85%](governance/justlend-dao-proposals/increase-the-collateral-factor-of-the-usdd-market-to-85.md)
   * [Add USDD as a collateralizable asset](governance/justlend-dao-proposals/add-usdd-as-a-collateralizable-asset.md)
+  * [Add BTT as a collateralizable asset](governance/justlend-dao-proposals/add-btt-as-a-collateralizable-asset.md)
 
 ## Risk
 
