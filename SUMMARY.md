@@ -65,6 +65,8 @@
   * [Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets](anouncement/new-features/adjust-the-interest-model-and-the-token-borrow-cap-of-the-usdd-trx-markets.md)
 * [Market](anouncement/market-upgrade/README.md)
   * [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
+  * [Announcement on Further Adjusting the Parameters of TRX and USDD Markets](anouncement/market-upgrade/announcement-on-further-adjusting-the-parameters-of-trx-and-usdd-markets.md)
+  * [Announcement on the Adjustment of the Interest Rate for TRX and USDD Market](anouncement/market-upgrade/announcement-on-the-adjustment-of-the-interest-rate-for-trx-and-usdd-market.md)
 
 ## FAQ
 
