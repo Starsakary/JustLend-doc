@@ -9,6 +9,7 @@
 * [Supply And Borrow](docs/faq/deposit-earning.md)
   * [Borrowing](docs/faq/borrowing.md)
     * [How to borrow tokens?](how-to-start/deposit-earning/borrowing/how-to-borrow-tokens.md)
+    * [How to repay tokens?](how-to-start/deposit-earning/borrowing/how-to-repay-tokens.md)
   * [Liquidations](docs/faq/liquidations.md)
   * [Supplying](how-to-start/deposit-earning/supplying.md)
 * [Mining Guide](how-to-start/mining-guide/README.md)
