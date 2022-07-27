@@ -62,11 +62,17 @@
 ## Anouncement
 
 * [New Features](anouncement/new-features/README.md)
+  * [Announcement on Adjusting the APY Algorithm of JustLend USDD Supply Mining](anouncement/new-features/announcement-on-adjusting-the-apy-algorithm-of-justlend-usdd-supply-mining.md)
+  * [Announcement on the new proposal of JustLend](anouncement/new-features/announcement-on-the-new-proposal-of-justlend.md)
   * [Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets](anouncement/new-features/adjust-the-interest-model-and-the-token-borrow-cap-of-the-usdd-trx-markets.md)
 * [Market](anouncement/market-upgrade/README.md)
   * [Announcement on Upgrading the Supply Mining Rewards to USDD on JustLend](anouncement/announcement-on-upgrading-the-supply-mining-rewards-to-usdd-on-justlend.md)
   * [Announcement on Further Adjusting the Parameters of TRX and USDD Markets](anouncement/market-upgrade/announcement-on-further-adjusting-the-parameters-of-trx-and-usdd-markets.md)
   * [Announcement on the Adjustment of the Interest Rate for TRX and USDD Market](anouncement/market-upgrade/announcement-on-the-adjustment-of-the-interest-rate-for-trx-and-usdd-market.md)
+  * [Announcement on Adjusting the TRX Market Interest Rate of JustLend](anouncement/market-upgrade/announcement-on-adjusting-the-trx-market-interest-rate-of-justlend.md)
+  * [Announcement on Suspending the Supply Mining of the TRX Market on JustLend](anouncement/market-upgrade/announcement-on-suspending-the-supply-mining-of-the-trx-market-on-justlend.md)
+  * [Announcement on Adjusting the Supply Mining APY of the USDD Market](anouncement/market-upgrade/announcement-on-adjusting-the-supply-mining-apy-of-the-usdd-market.md)
+  * [Announcement of Launching USDD Supply Mining on JustLend](anouncement/market-upgrade/announcement-of-launching-usdd-supply-mining-on-justlend.md)
 
 ## FAQ
 
