@@ -61,7 +61,7 @@
 * [Developer Docs](developers/page-3/README.md)
   * [Backend API](developers/developer-docs/api.md)
   * [Smart Contract API](developers/developer-docs/smart-contract-api.md)
-  * [JustLend DAO Whitepaper](developers/developer-docs/justlend-dao-whitepaper.md)
+  * [\[JustLend DAO Whitepaper\](https://www.justlend.link/docs/justlend\_whitepaper\_en.pdf)](developers/developer-docs/justlend-dao-whitepaper.md)
 * [Test Net info](developers/test-net-info.md)
 * [Bug Bounty](developers/hackathons.md)
 * [Security and Audits](developers/security-and-audits.md)
