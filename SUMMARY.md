@@ -6,19 +6,18 @@
 
 ## How to start
 
-* [Supply And Borrow](docs/faq/deposit-earning.md)
-  * [Borrowing](docs/faq/borrowing.md)
-    * [How to borrow tokens?](how-to-start/deposit-earning/borrowing/how-to-borrow-tokens.md)
-    * [How to repay tokens?](how-to-start/deposit-earning/borrowing/how-to-repay-tokens.md)
-  * [Liquidations](docs/faq/liquidations.md)
-    * [What will trigger liquidation?](how-to-start/deposit-earning/liquidations/what-will-trigger-liquidation.md)
-  * [Supplying](how-to-start/deposit-earning/supplying.md)
-    * [How to link a wallet?](how-to-start/deposit-earning/supplying/how-to-link-a-wallet.md)
-    * [How to supply tokens?](how-to-start/deposit-earning/supplying/how-to-supply-tokens.md)
-    * [How to enable collateral?](how-to-start/deposit-earning/supplying/how-to-enable-collateral.md)
-    * [How to withdraw tokens?](how-to-start/deposit-earning/supplying/how-to-withdraw-tokens.md)
 * [Mining Guide](how-to-start/mining-guide/README.md)
   * ["Upcoming" and "Frozen" Mining Rewards Explained](how-to-start/mining-guide/upcoming-and-frozen-mining-rewards-explained.md)
+* [Borrowing](how-to-start/borrowing/README.md)
+  * [How to borrow tokens?](how-to-start/borrowing/how-to-borrow-tokens.md)
+  * [How to repay tokens?](how-to-start/borrowing/how-to-repay-tokens.md)
+* [Liquidations](how-to-start/liquidations/README.md)
+  * [What will trigger liquidation?](how-to-start/liquidations/what-will-trigger-liquidation.md)
+* [Supplying](how-to-start/supplying/README.md)
+  * [How to link a wallet?](how-to-start/supplying/how-to-link-a-wallet.md)
+  * [How to supply tokens?](how-to-start/supplying/how-to-supply-tokens.md)
+  * [How to enable collateral?](how-to-start/supplying/how-to-enable-collateral.md)
+  * [How to withdraw tokens?](how-to-start/supplying/how-to-withdraw-tokens.md)
 
 ## Governance
 
