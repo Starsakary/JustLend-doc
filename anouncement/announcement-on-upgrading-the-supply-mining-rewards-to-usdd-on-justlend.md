@@ -70,7 +70,7 @@ The supply mining rewards of the USDD market will be upgraded from “JST + USDD
 
 Thank you for your support!
 
-JustLend Team
+JustLend DAO Team
 
 July 06, 2022
 

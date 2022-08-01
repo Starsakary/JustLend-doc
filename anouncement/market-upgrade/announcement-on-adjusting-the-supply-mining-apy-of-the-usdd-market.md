@@ -18,6 +18,6 @@ In order to maintain the stability of the USDD market and ensure the safety of i
 
 Thank you for your support.
 
-JustLend Team
+JustLend DAO Team
 
 May 13, 2022(SGT)

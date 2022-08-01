@@ -18,6 +18,6 @@ After the proposal is passed, it will provide users a more reliable, safer, and 
 
 Thank you for your support of JustLend!
 
-JustLend Team
+JustLend DAO Team
 
 June 20, 2022 (Singapore time)

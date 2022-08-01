@@ -52,6 +52,6 @@ The USDD market adopts the same interest model as USDT does, where the interest 
 
 Thank you for your support.
 
-JustLend Team
+JustLend DAO Team
 
 June 27, 2022(SGT)

@@ -16,6 +16,6 @@ Thank you for your support!
 
 &#x20;
 
-JustLend Team
+JustLend DAO Team
 
 June 22, 2022 (Singapore time)

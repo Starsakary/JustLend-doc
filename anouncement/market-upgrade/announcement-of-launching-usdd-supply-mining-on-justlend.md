@@ -26,6 +26,6 @@ For example, the first week of the mining is from 20:00:00 May 12, 2022 (Singapo
 
 Thank you for your support!
 
-JustLend Team
+JustLend DAO Team
 
 May 12, 2022

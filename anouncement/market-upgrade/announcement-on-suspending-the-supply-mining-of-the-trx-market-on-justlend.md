@@ -10,6 +10,6 @@ In order to promote the healthy and sustainable development of JustLend market a
 
 Thank you for your support.
 
-JustLend Team
+JustLend DAO Team
 
 June 20, 2022(SGT)
