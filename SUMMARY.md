@@ -45,15 +45,9 @@
 * [Asset Risk](risk/page-2.md)
   * [Adding an Asset](developers/page-3/asset/adding-asset/README.md)
   * [Methodology](developers/page-3/asset/methodology/README.md)
-  * [Price Discovery](developers/page-3/asset/price-discovery.md)
-  * [Risk Parameters](developers/page-3/asset/risk-params/README.md)
-  * [Risks per Asset](developers/page-3/asset/risk-per-asset/README.md)
 * [Liquidity Risk](risk/liquidity-risk/README.md)
-  * [Historical Utilisation](risk/liquidity-risk/historical-utilisation/README.md)
   * [Borrow Interest Rate](risk/liquidity-risk/borrow-interest-rate.md)
   * [What will trigger liquidation?](risk/liquidity-risk/what-will-trigger-liquidation.md)
-  * [jToken Liquidity](risk/liquidity-risk/atoken-liquidity.md)
-  * [jToken Valuation](risk/liquidity-risk/atoken-valuation/README.md)
 
 ## DEVELOPERS
 
@@ -83,12 +77,7 @@
 
 ## FAQ
 
-* [Introduction to JustLend](developers/page-3/docs/faq.md)
 * [What determines the Supply APY and Borrow APY?](page-1/what-determines-the-supply-apy-and-borrow-apy.md)
-* [JustLend Economics](developers/page-3/asset/governance.md)
-* [TroubleShooting](developers/page-3/asset/amm/troubleshooting.md)
-* [Testing JustLend Protocol](developers/page-3/asset/adding-asset/testing.md)
-* [Terminology](developers/page-3/asset/risk-per-asset/terminology.md)
 * [What is net APY?](faq/what-is-net-apy.md)
 * [How to understand your risk value?](faq/how-to-understand-your-risk-value.md)
 * [What is jToken?](faq/what-is-jtoken.md)
