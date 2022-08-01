@@ -1,9 +1,9 @@
 # Adding an Asset
 
-JustLend enables users to supply and borrow digital assets through liquidity pools. Suppliers receive protocol-issued aTokens, holding the user’s supplied assets and accrued yield. Each borrow is secured by collateral acting as a risk mitigation tool against default.&#x20;
+JustLend DAO enables users to supply and borrow digital assets through liquidity pools. Suppliers receive protocol-issued jTokens, holding the user’s supplied assets and accrued yield. Each borrow is secured by collateral acting as a risk mitigation tool against default.&#x20;
 
 1. **Each additional token slightly increase the fee cost of transactions permanently.** The token must be included in the smart contract, adding complexity and thus costs.
-2. **Each token added to** JustLend **protocol as collateral increases the protocol risk of insolvency.** From a financial perspective, the token enabled as collateral can be considered as assets of JustLend protocol, while the amount of tokens borrowed considered as the liabilities of the JustLend protocol. The underlying tokens of assets and liabilities often differ, with borrows mostly in stablecoins and tokens used as collateral being volatile tokens. Thus, it is crucial that while adding new tokens the JustLend Community considers:
+2. **Each token added to JustLend DAO protocol as collateral increases the protocol risk of insolvency.** From a financial perspective, the token enabled as collateral can be considered as assets of JustLend DAO protocol, while the amount of tokens borrowed considered as the liabilities of the JustLend DAO protocol. The underlying tokens of assets and liabilities often differ, with borrows mostly in stablecoins and tokens used as collateral being volatile tokens. Thus, it is crucial that while adding new tokens the JustLend DAO considers:
    * Only assets with best risk profiles should be supported as collateral
    * Riskier assets should only be enabled as collateral in _Isolation mode_
    * New assets with higher risk and lower liquidity should be only considered listed in _Isolation mode_ (for both borrow and collateral use)
