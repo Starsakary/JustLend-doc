@@ -1,4 +1,4 @@
-# What is net APY?
+# What is Net APY?
 
 Net APY is an important reference for users to understand the P\&L of the current assets and loans.
 

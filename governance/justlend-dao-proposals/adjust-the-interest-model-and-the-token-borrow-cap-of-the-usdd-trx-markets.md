@@ -4,13 +4,13 @@ Adjust the Interest Model and the Token Borrow Cap of the USDD, TRX Markets
 
 Proposal Details:
 
-1\. Adjust the interest model,  Token Borrow Cap of the USDD market and the TRX market
+1\. Adjust the interest model, Token Borrow Cap of the USDD market and the TRX market
 
-2\. Add the market management function,  which can adjust the parameters of the  USDD market and TRX market according to the market changes, including the lending rate, Token Borrow Cap,  whether lending is allowed, and so on. In order to cope with extreme changes in the cryptocurrency market and ensure the safety of investors’ assets.
+2\. Add the market management function, which can adjust the parameters of the USDD market and TRX market according to the market changes, including the lending rate, Token Borrow Cap, whether lending is allowed, and so on. In order to cope with extreme changes in the cryptocurrency market and ensure the safety of investors’ assets.
 
-The proposal will provide users a more reliable, safer, and more efficient lending services.
+The proposal will provide users with a more reliable, safer, and more efficient lending services.
 
-#### Market Parameters: <a href="#h.7hgphd7xr6bd" id="h.7hgphd7xr6bd"></a>
+**Market Parameters:**
 
 The proposal adjusts the TRX, USDD market interest model as follows:
 
@@ -46,4 +46,3 @@ The proposal adjusts the TRX, USDD market interest model as follows:
 | 90%              | 15.9%           | 13.59%          |
 | 100%             | 26.8%           | 25.46%          |
 
-\

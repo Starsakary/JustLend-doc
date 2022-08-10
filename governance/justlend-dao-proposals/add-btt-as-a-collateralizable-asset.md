@@ -1,8 +1,8 @@
-# Add BTT as a collateralizable asset
+# Add BTT as a Collateralizable Asset
 
-## Add BTT as a collateralizable asset
+### Add BTT as a collateralizable asset
 
-### Details
+#### Details
 
 1. Add a new BTT price oracle for BTT/TRX;
 2. Add support for jBTT on JustLend smart contracts; [View](https://tronscan.org/#/contract/TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto/code)
@@ -13,9 +13,7 @@
 
 The proposal is to enable the supplying/borrowing of BTT (TRC20) on JustLend and have the oracle provide trusted BTT/TRX prices.
 
-
-
-#### Market Parameters: <a href="#h.km4kcslj0e1" id="h.km4kcslj0e1"></a>
+**Market Parameters:**
 
 [BitTorrent (BTT)](https://tronscan.org/#/token20/TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4) is a TRC20 token based on the TRON network, bringing in the value of BitTorrent Chain to the TRON network and empowering the JUST token in the ecosystem.
 
@@ -23,7 +21,7 @@ BitTorrent Chain, the first scalable heterogeneous cross-chain interoperability 
 
 As it is an emerging market, the collateral factor of BTT is set at 60%, while its reserve factor is set at 20%.
 
-The BTT market adopts the similar interest model as WIN does, where the interest rate rockets to a higher tier when the utilization rate exceeds 80%. Its Supply Base APY hits 89.6% when the utilization rate reaches 100%. Supply and borrow APYs at different utilization rates are as follows:
+The BTT market adopts a similar interest model as WIN does, where the interest rate rockets to a higher tier when the utilization rate exceeds 80%. Its Supply Base APY hits 89.6% when the utilization rate reaches 100%. Supply and borrow APYs at different utilization rates are as follows:
 
 | Utilization Ratio | Borrow Base APY | Supply Base APY |
 | ----------------- | --------------- | --------------- |
@@ -39,7 +37,7 @@ The BTT market adopts the similar interest model as WIN does, where the interest
 | 90%               | 72.00%          | 51.84%          |
 | 100%              | 112.00%         | 89.60%          |
 
-### Contract
+#### Contract
 
 The smart contract of jBTT is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jBTT won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 

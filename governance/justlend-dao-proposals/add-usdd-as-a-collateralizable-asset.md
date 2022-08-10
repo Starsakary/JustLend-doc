@@ -1,12 +1,6 @@
-# Add USDD as a collateralizable asset
+# Add USDD as a Collateralizable Asset
 
-## Add USDD as a collateralizable asset
-
-
-
-### Details:
-
-
+#### Details:
 
 * 1\. Add a new USDD price oracle for USDD/TRX;
 * 2\. Add support for jUSDD on JustLend smart contracts; [View](https://tronscan.org/#/contract/TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS/code)
@@ -16,17 +10,13 @@
 
 The proposal is to enable supply/borrow of USDD (TRC20) on JustLend and have the oracle to provide trusted USDD/TRX prices.
 
-
-
-#### Market Parameters: <a href="#h.ousecyk39ynt" id="h.ousecyk39ynt"></a>
+**Market Parameters:**
 
 USDD is a TRON-based decentralized stablecoin issued by TRON DAO Reserve.
 
 The collateral factor is set at 0%, while its reserve factor is set at 5% to encourage more supply and borrow of the asset.
 
 The USDD market adopts the same interest model as USDT does, where the interest rate rockets to a higher tier when the utilization rate exceeds 80%. Its APY hits 25.46% when the utilization rate reaches 100%. Supply and borrow APYs at different utilization rates are as follows:
-
-
 
 | Utilization rate | Borrow Base APY | Supply Base APY |
 | ---------------- | --------------- | --------------- |
@@ -42,7 +32,7 @@ The USDD market adopts the same interest model as USDT does, where the interest 
 | 90%              | 15.90%          | 13.59%          |
 | 100%             | 26.80%          | 25.46%          |
 
-### Contract
+#### Contract
 
 The smart contract of jUSDD is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jUSDD won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 

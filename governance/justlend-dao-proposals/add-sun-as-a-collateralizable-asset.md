@@ -1,8 +1,8 @@
-# Add SUN as a collateralizable asset
+# Add SUN as a Collateralizable Asset
 
-## Add SUN as a collateralizable asset
+### Add SUN as a collateralizable asset
 
-### Details
+#### Details
 
 1. Add a new SUN price oracle for SUN/TRX;
 2. Add support for jSUN on JustLend smart contracts; [View](https://tronscan.org/#/contract/TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e/)
@@ -12,10 +12,10 @@
 
 The proposal is to enable supply/borrow of SUN (TRC20) on JustLend and have the oracle to provide trusted SUN/TRX prices.
 
-#### Market Parameters: <a href="#h.km4kcslj0e1" id="h.km4kcslj0e1"></a>
+**Market Parameters:**
 
 \
-SUN is a TRON network-based TRC20 token. SUN platform ([sun.io](https://sun.io/?lang=en-US#/home)) is TRON’s first integrated platform for stablecoin swap, stake-mining and self-governance. As a multi-purpose governance token on the SUN platform, SUN grants its holders a variety of rights and benefits including voting, governance, value capture, staking rewards, etc. &#x20;
+SUN is a TRON network-based TRC20 token. SUN platform ([sun.io](https://sun.io/?lang=en-US#/home)) is TRON’s first integrated platform for stablecoin swap, stake-mining and self-governance. As a multi-purpose governance token on the SUN platform, SUN grants its holders a variety of rights and benefits including voting, governance, value capture, staking rewards, etc.
 
 The collateral factor of SUN is set at 50%, while its reserve factor is set at 30%.
 
@@ -35,7 +35,7 @@ The SUN market adopts the similar interest model as SUNOLD does, where the inter
 | 90%              | 235.00%         | 148.05%         |
 | 100%             | 275.00%         | 192.50%         |
 
-### Contract
+#### Contract
 
 The smart contract of jSUN is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jSUN won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 

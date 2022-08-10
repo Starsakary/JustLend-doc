@@ -1,10 +1,8 @@
 # Add TUSD Lending Market
 
-## Add TUSD as a collateralizable asset
+### Add TUSD as a collateralizable asset
 
-
-
-### Details
+#### Details
 
 1. Add a new TUSD price oracle for TUSD/TRX;
 2. Add support for jTUSD on JustLend smart contracts; [View](https://tronscan.io/#/contract/TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R/code)
@@ -14,7 +12,7 @@
 
 The proposal is to enable supply/borrow of TUSD (TRC20) on JustLend and have the oracle to provide trusted TUSD/TRX prices.
 
-#### Market Parameters <a href="#h.km4kcslj0e1" id="h.km4kcslj0e1"></a>
+**Market Parameters**
 
 TUSD is a TRON-based TRC20 token that brings the value of TrueUSD onto the TRON network to power tokens in the JUST ecosystem.
 
@@ -38,7 +36,7 @@ The TUSD market adopts the same interest model as USDJ does, where the interest 
 | 90%              | 15.9%      | 13.59%     |
 | 100%             | 26.8%      | 25.46%     |
 
-### Contract
+#### Contract
 
 The smart contract of jTUSD is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jTUSD won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 

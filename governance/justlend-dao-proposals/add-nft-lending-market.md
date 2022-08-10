@@ -1,10 +1,8 @@
 # Add NFT Lending Market
 
-## Add NFT as a collateralizable asset
+### Add NFT as a collateralizable asset
 
-### Details
-
-
+#### Details
 
 1. Add a new NFT price oracle for NFT/TRX;
 2. Add support for jNFT on JustLend smart contracts; [View](https://tronscan.org/#/contract/TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE/code\&sa=D\&source=editors\&ust=1624534635568000\&usg=AOvVaw1YaATQIpDDn-a9sr0xh068)
@@ -14,7 +12,7 @@
 
 The proposal is to enable supply/borrow of NFT (TRC20) on JustLend and have the oracle to provide trusted NFT/TRX prices.
 
-#### Market Parameters <a href="#h.km4kcslj0e1" id="h.km4kcslj0e1"></a>
+**Market Parameters**
 
 APENFT（NFT） is a TRON-based TRC20 token that brings the value of TrueUSD onto the TRON network to power tokens in the JUST ecosystem.
 
@@ -38,7 +36,7 @@ The NFT market adopts the similar interest model as WIN does, where the interest
 | 90%              | 72.00%          | 51.84%          |
 | 100%             | 112.00%         | 89.60%          |
 
-### Contract
+#### Contract
 
 The smart contract of jNFT is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jNFT won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 

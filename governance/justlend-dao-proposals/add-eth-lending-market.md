@@ -1,8 +1,8 @@
 # Add ETH Lending Market
 
-## Add ETH Lending Market
+### Add ETH Lending Market
 
-### Details
+#### Details
 
 1. Add a new ETH price oracle for ETH/TRX;
 2. Add support for jETH on JustLend smart contracts: [View](https://tronscan.io/#/contract/TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV/code) ;
@@ -11,11 +11,11 @@
 
 The proposal is to enable supply and borrow of [Ethereum (TRC20)](https://tronscan.io/#/token20/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF) on JustLend, and have the oracle to provide trusted ETH prices.
 
-#### Market Parameters <a href="#h.g5blwn1cpa8d" id="h.g5blwn1cpa8d"></a>
+**Market Parameters**
 
 ETH is a TRON-based TRC20 token that brings the value of Ethereum onto the TRON network to power tokens in the JUST ecosystem. Despite being a new market on JustLend, ETH boasts large circulation on its mainnet. We will devise a more conservative interest rate model (smoothing interest rate model) to monitor the supply and demand of ETH on JustLend.
 
-Due to the large amount of circulation, the collateral factor of ETH is set at 75%, while its reserve factor is set at 10% to encourage more supply and borrow of the asset. &#x20;
+Due to the large amount of circulation, the collateral factor of ETH is set at 75%, while its reserve factor is set at 10% to encourage more supply and borrow of the asset.
 
 ETH market adopts the same interest rate model as BTC (Bitcoin-TRC20), where the borrowing interest rate will be 28.8% when the utilization rate reaches 100%. Supply and borrow APYs for ETH with different utilization rates are as follows:
 
@@ -33,9 +33,9 @@ ETH market adopts the same interest rate model as BTC (Bitcoin-TRC20), where the
 | 90%              | 29.00%     | 23.49%     |
 | 100%             | 32.00%     | 28.80%     |
 
-### Contract
+#### Contract
 
-The smart contract of jETH is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jETH won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance. &#x20;
+The smart contract of jETH is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jETH won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 
 The smart contract of jETH has been reviewed by the JustLend team and community developers.
 

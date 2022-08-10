@@ -1,20 +1,18 @@
 # Adjusting the Reserve Factor of SUNOLD Market to 100%
 
-## **Adjusting the Reserve Factor of SUNOLD Market to 100%**
+### **Adjusting the Reserve Factor of SUNOLD Market to 100%**
 
-
-
-### Details
+#### Details
 
 1. We are adjusting the reserve factor of SUNOLD market to 100%.
 
 We are planning to phase out the SUNOLD market. Currently we are at stage one, and going forward we may initiate proposals to lower the collateral factor of the SUNOLD market.
 
-#### Increasing the Reserve Factor
+**Increasing the Reserve Factor**
 
 The proposal will raise the reserve factor of SUNOLD market from 30% to 100%, meaning supply in the SUNOLD market will no longer yield any rewards (according to the formula, the supply APY will be lowered to zero). It will discourage users from supplying SUNOLD on JustLend while encouraging them to swap their SUNOLD tokens into the new SUN.
 
-Please note that the zero supply base APY does not indicate that borrowing will be interest-free. Users who borrow SUNOLD on JustLend still need to pay for the borrowing interest. &#x20;
+Please note that the zero supply base APY does not indicate that borrowing will be interest-free. Users who borrow SUNOLD on JustLend still need to pay for the borrowing interest.
 
 The table below shows the adjusted APYs:
 
@@ -31,4 +29,3 @@ The table below shows the adjusted APYs:
 | 80%              | 195.00%    | 0.00%           |
 | 90%              | 235.00%    | 0.00%           |
 | 100%             | 275.00%    | 0.00%           |
-

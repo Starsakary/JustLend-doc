@@ -1,10 +1,8 @@
-# Add USDC as a collateralizable asset
+# Add USDC as a Collateralizable Asset
 
-## Add USDC as a collateralizable asset
+### Add USDC as a collateralizable asset
 
-### Details
-
-
+#### Details
 
 1. Add a new USDC price oracle for USDC/TRX;
 2. Add support for jUSDC on JustLend smart contracts;[View](https://tronscan.org/#/contract/TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy)
@@ -14,7 +12,7 @@
 
 The proposal is to enable supply/borrow of USDC (TRC20) on JustLend and have the oracle to provide trusted USDC/TRX prices.
 
-#### Market Parameters: <a href="#h.km4kcslj0e1" id="h.km4kcslj0e1"></a>
+**Market Parameters:**
 
 USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.
 
@@ -36,7 +34,7 @@ The USDC market adopts the similar interest model as USDT does,where the interes
 | 90%              | 15.90%          | 13.59%          |
 | 100%             | 26.80%          | 25.46%          |
 
-### Contract
+#### Contract
 
 The smart contract of jUSDC is upgradeable. Once a new feature is added, the administrative access of the contract will be transferred over to the smart contract used by JustLend for voting & governance. In other words, the administrative access of jUSDC won't belong to any individual or organization. Rather, it will be transferred over to the “hybrid smart contract” for voting & governance.
 
