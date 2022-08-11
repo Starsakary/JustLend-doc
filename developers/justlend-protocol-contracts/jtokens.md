@@ -4,7 +4,7 @@
 
 Each asset supported by the Compound Protocol is integrated through a cToken contract, which is an [EIP-20](https://eips.ethereum.org/EIPS/eip-20)s as collateral.
 
-cTokens are the primary means of interacting with the Compound Protocol; when a user mints, redeems, borrows, repays a borrow, liquidates a borrow, or transfers cTokens, she will do so using the cToken contract.
+jTokens are the primary means of interacting with the Compound Protocol; when a user mints, redeems, borrows, repays a borrow, liquidates a borrow, or transfers jTokens, she will do so using the jToken contract.
 
 There are currently two types of cTokens: CErc20 and CEther. Though both types expose the EIP-20 interface, CErc20 wraps an underlying ERC-20 asset, while CEther simply wraps Ether itself. As such, the core functions which involve transferring an asset into the protocol have slightly different interfaces depending on the type, each of which is shown below.
 
