@@ -1,8 +1,12 @@
 # Comptroller
 
+###
+
+Comptroller
+
 ### Introduction
 
-The Comptroller is the risk management layer of the JustLend protocol; it determines how much collateral a user is required to maintain, and whether (and by how much) a user can be liquidated. Each time a user interacts with a cToken, the Comptroller is asked to approve or deny the transaction.
+The Comptroller is the risk management layer of the Compound protocol; it determines how much collateral a user is required to maintain, and whether (and by how much) a user can be liquidated. Each time a user interacts with a cToken, the Comptroller is asked to approve or deny the transaction.
 
 The Comptroller maps user balances to prices (via the Price Oracle) to risk weights (called Collateral Factors) to make its determinations. Users explicitly list which assets they would like included in their risk scoring, by calling Enter Markets and Exit Market.
 
@@ -16,8 +20,8 @@ Enter into a list of markets - it is not an error to enter the same market more 
 
 **Comptroller**
 
-```javascript
-function enterMarkets(address[] memory cTokens) public returns (uint[] memory)
+```
+function enterMarkets(address[] calldata cTokens) returns (uint[] memory)
 ```
 
 * msg.sender: The account which shall enter the given markets.
@@ -26,7 +30,7 @@ function enterMarkets(address[] memory cTokens) public returns (uint[] memory)
 
 **Solidity**
 
-```javascript
+```
 Comptroller troll = Comptroller(0xABCD...);
 CToken[] memory cTokens = new CToken[](2);
 cTokens[0] = CErc20(0x3FDA...);
@@ -36,7 +40,7 @@ uint[] memory errors = troll.enterMarkets(cTokens);
 
 **Web3 1.0**
 
-```javascript
+```
 const troll = Comptroller.at(0xABCD...);
 const cTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];
 const errors = await troll.methods.enterMarkets(cTokens).send({from: ...});
@@ -48,24 +52,24 @@ Exit a market - it is not an error to exit a market which is not currently enter
 
 **Comptroller**
 
-```javascript
- function exitMarket(address cTokenAddress) external returns (uint)
+```
+function exitMarket(address cToken) returns (uint)
 ```
 
 * msg.sender: The account which shall exit the given market.
-* cTokenAddress: The addresses of the cToken market to exit.
+* cTokens: The addresses of the cToken market to exit.
 * RETURN: 0 on success, otherwise an Error code.
 
 **Solidity**
 
-```javascript
+```
 Comptroller troll = Comptroller(0xABCD...);
 uint error = troll.exitMarket(CToken(0x3FDA...));
 ```
 
 **Web3 1.0**
 
-```javascript
+```
 const troll = Comptroller.at(0xABCD...);
 const errors = await troll.methods.exitMarket(CEther.at(0x3FDB...)).send({from: ...});
 ```
@@ -76,8 +80,8 @@ Get the list of markets an account is currently entered into. In order to supply
 
 **Comptroller**
 
-```javascript
-function getAssetsIn(address account) external view returns (CToken[] memory)
+```
+function getAssetsIn(address account) view returns (address[] memory)
 ```
 
 * account: The account whose list of entered markets shall be queried.
@@ -85,14 +89,14 @@ function getAssetsIn(address account) external view returns (CToken[] memory)
 
 **Solidity**
 
-```javascript
+```
 Comptroller troll = Comptroller(0xABCD...);
 address[] memory markets = troll.getAssetsIn(0xMyAccount);
 ```
 
 **Web3 1.0**
 
-```javascript
+```
 const troll = Comptroller.at(0xABCD...);
 const markets = await troll.methods.getAssetsIn(cTokens).call();
 ```
@@ -103,9 +107,9 @@ A cToken's collateral factor can range from 0-90%, and represents the proportion
 
 Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. If an asset has a 0% collateral factor, it can't be used as collateral (or seized in liquidation), though it can still be borrowed.
 
-Collateral factors can be increased (or decreased) through JustLend Governance, as market conditions change.
+Collateral factors can be increased (or decreased) through Compound Governance, as market conditions change.
 
-**Comptroller(未找到)**
+**Comptroller**
 
 ```
 function markets(address cTokenAddress) view returns (bool, uint, bool)
@@ -135,12 +139,12 @@ Account Liquidity represents the USD value borrowable by a user, before it reach
 
 For each market the user has entered into, their supplied balance is multiplied by the market’s collateral factor, and summed; borrow balances are then subtracted, to equal Account Liquidity. Borrowing an asset reduces Account Liquidity for each USD borrowed; withdrawing an asset reduces Account Liquidity by the asset’s collateral factor times each USD withdrawn.
 
-Because the JustLend Protocol exclusively uses unsigned integers, Account Liquidity returns either a surplus or shortfall.
+Because the Compound Protocol exclusively uses unsigned integers, Account Liquidity returns either a surplus or shortfall.
 
 **Comptroller**
 
-```javascript
-function getAccountLiquidity(address account) public view returns (uint, uint, uint)
+```
+function getAccountLiquidity(address account) view returns (uint, uint, uint)
 ```
 
 * account: The account whose liquidity shall be calculated.
@@ -148,7 +152,7 @@ function getAccountLiquidity(address account) public view returns (uint, uint, u
 
 **Solidity**
 
-```javascript
+```
 Comptroller troll = Comptroller(0xABCD...);
 (uint error, uint liquidity, uint shortfall) = troll.getAccountLiquidity(msg.caller);
 require(error == 0, "join the Discord");
@@ -158,7 +162,7 @@ require(liquidity > 0, "account has excess collateral");
 
 **Web3 1.0**
 
-```javascript
+```
 const troll = Comptroller.at(0xABCD...);
 const result = await troll.methods.getAccountLiquidity(0xBorrower).call();
 const {0: error, 1: liquidity, 2: shortfall} = result;
@@ -168,7 +172,7 @@ const {0: error, 1: liquidity, 2: shortfall} = result;
 
 The percent, ranging from 0% to 100%, of a liquidatable account's borrow that can be repaid in a single liquidate transaction. If a user has multiple borrowed assets, the closeFactor applies to any single borrowed asset, not the aggregated value of a user’s outstanding borrowing.
 
-**Comptroller(未找到)**
+**Comptroller**
 
 ```
 function closeFactorMantissa() view returns (uint)
@@ -194,7 +198,7 @@ const closeFactor = await troll.methods.closeFactorMantissa().call();
 
 The additional collateral given to liquidators as an incentive to perform liquidation of underwater accounts. A portion of this is given to the collateral cToken reserves as determined by the seize share. The seize share is assumed to be 0 if the cToken does not have a protocolSeizeShareMantissa constant. For example, if the liquidation incentive is 1.08, and the collateral's seize share is 1.028, liquidators receive an extra 5.2% of the borrower's collateral for every unit they close, and the remaining 2.8% is added to the cToken's reserves.
 
-**Comptroller(未找到)**
+**Comptroller**
 
 ```
 function liquidationIncentiveMantissa() view returns (uint)
@@ -274,7 +278,7 @@ const closeFactor = await troll.methods.liquidationIncentiveMantissa().call();
 
 #### COMP Speed
 
-The "COMP speed" unique to each market is an unsigned integer that specifies the amount of COMP that is distributed, per block, to suppliers and borrowers in each market. This number can be changed for individual markets by calling the \_setCompSpeed method through a successful JustLend Governance proposal.
+The "COMP speed" unique to each market is an unsigned integer that specifies the amount of COMP that is distributed, per block, to suppliers and borrowers in each market. This number can be changed for individual markets by calling the \_setCompSpeed method through a successful Compound Governance proposal.
 
 The following is the formula for calculating the rate that COMP is distributed to each supported market.
 
@@ -288,9 +292,9 @@ marketCompSpeed = compRate * utilityFraction
 
 #### COMP Distributed Per Block (All Markets)
 
-The Comptroller contract’s compRate is an unsigned integer that indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers, every TRON block. The value is the amount of COMP (in wei), per block, allocated for the markets. Note that not every market has COMP distributed to its participants (see Market Metadata).
+The Comptroller contract’s compRate is an unsigned integer that indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers, every Ethereum block. The value is the amount of COMP (in wei), per block, allocated for the markets. Note that not every market has COMP distributed to its participants (see Market Metadata).
 
-The compRate indicates how much COMP goes to the suppliers or borrowers, so doubling this number shows how much COMP goes to all suppliers and borrowers combined. The code examples implement reading the amount of COMP distributed, per TRON block, to all markets.
+The compRate indicates how much COMP goes to the suppliers or borrowers, so doubling this number shows how much COMP goes to all suppliers and borrowers combined. The code examples implement reading the amount of COMP distributed, per Ethereum block, to all markets.
 
 **Comptroller**
 
@@ -330,9 +334,9 @@ const compRatePerDayTotal = compRatePerDay * 2;
 
 #### COMP Distributed Per Block (Single Market)
 
-The Comptroller contract has a mapping called compSpeeds. It maps cToken addresses to an integer of each market’s COMP distribution per TRON block. The integer indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers. The value is the amount of COMP (in wei), per block, allocated for the market. Note that not every market has COMP distributed to its participants (see Market Metadata).
+The Comptroller contract has a mapping called compSpeeds. It maps cToken addresses to an integer of each market’s COMP distribution per Ethereum block. The integer indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers. The value is the amount of COMP (in wei), per block, allocated for the market. Note that not every market has COMP distributed to its participants (see Market Metadata).
 
-The speed indicates how much COMP goes to the suppliers or the borrowers, so doubling this number shows how much COMP goes to market suppliers and borrowers combined. The code examples implement reading the amount of COMP distributed, per TRON block, to a single market.
+The speed indicates how much COMP goes to the suppliers or the borrowers, so doubling this number shows how much COMP goes to market suppliers and borrowers combined. The code examples implement reading the amount of COMP distributed, per Ethereum block, to a single market.
 
 **Comptroller**
 
@@ -375,7 +379,7 @@ const compSpeedPerDayTotal = compSpeedPerDay * 2;
 
 ### Claim COMP
 
-Every JustLend user accrues COMP for each block they are supplying to or borrowing from the protocol. Users may call the Comptroller's claimComp method at any time to transfer COMP accrued to their address.
+Every Compound user accrues COMP for each block they are supplying to or borrowing from the protocol. Users may call the Comptroller's claimComp method at any time to transfer COMP accrued to their address.
 
 **Comptroller**
 
