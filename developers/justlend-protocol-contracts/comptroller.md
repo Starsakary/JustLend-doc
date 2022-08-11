@@ -16,7 +16,7 @@ Enter into a list of markets - it is not an error to enter the same market more 
 
 **Comptroller**
 
-```
+```js
 function enterMarkets(address[] calldata jTokens) returns (uint[] memory)
 ```
 
@@ -26,7 +26,7 @@ function enterMarkets(address[] calldata jTokens) returns (uint[] memory)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 CToken[] memory jTokens = new CToken[](2);
 jTokens[0] = CErc20(0x3FDA...);
@@ -36,7 +36,7 @@ uint[] memory errors = troll.enterMarkets(jTokens);
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const jTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];
 const errors = await troll.methods.enterMarkets(jTokens).send({from: ...});
@@ -48,7 +48,7 @@ Exit a market - it is not an error to exit a market which is not currently enter
 
 **Comptroller**
 
-```
+```js
 function exitMarket(address jToken) returns (uint)
 ```
 
@@ -58,14 +58,14 @@ function exitMarket(address jToken) returns (uint)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 uint error = troll.exitMarket(CToken(0x3FDA...));
 ```
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const errors = await troll.methods.exitMarket(CEther.at(0x3FDB...)).send({from: ...});
 ```
@@ -76,7 +76,7 @@ Get the list of markets an account is currently entered into. In order to supply
 
 **Comptroller**
 
-```
+```js
 function getAssetsIn(address account) view returns (address[] memory)
 ```
 
@@ -85,14 +85,14 @@ function getAssetsIn(address account) view returns (address[] memory)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 address[] memory markets = troll.getAssetsIn(0xMyAccount);
 ```
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const markets = await troll.methods.getAssetsIn(jTokens).call();
 ```
@@ -107,7 +107,7 @@ Collateral factors can be increased (or decreased) through Compound Governance, 
 
 **Comptroller**
 
-```
+```js
 function markets(address jTokenAddress) view returns (bool, uint, bool)
 ```
 
@@ -116,14 +116,14 @@ function markets(address jTokenAddress) view returns (bool, uint, bool)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 (bool isListed, uint collateralFactorMantissa, bool isComped) = troll.markets(0x3FDA...);
 ```
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const result = await troll.methods.markets(0x3FDA...).call();
 const {0: isListed, 1: collateralFactorMantissa, 2: isComped} = result;
@@ -139,7 +139,7 @@ Because the Compound Protocol exclusively uses unsigned integers, Account Liquid
 
 **Comptroller**
 
-```
+```js
 function getAccountLiquidity(address account) view returns (uint, uint, uint)
 ```
 
@@ -148,7 +148,7 @@ function getAccountLiquidity(address account) view returns (uint, uint, uint)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 (uint error, uint liquidity, uint shortfall) = troll.getAccountLiquidity(msg.caller);
 require(error == 0, "join the Discord");
@@ -158,7 +158,7 @@ require(liquidity > 0, "account has excess collateral");
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const result = await troll.methods.getAccountLiquidity(0xBorrower).call();
 const {0: error, 1: liquidity, 2: shortfall} = result;
@@ -170,7 +170,7 @@ The percent, ranging from 0% to 100%, of a liquidatable account's borrow that ca
 
 **Comptroller**
 
-```
+```js
 function closeFactorMantissa() view returns (uint)
 ```
 
@@ -178,14 +178,14 @@ function closeFactorMantissa() view returns (uint)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 uint closeFactor = troll.closeFactorMantissa();
 ```
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const closeFactor = await troll.methods.closeFactorMantissa().call();
 ```
@@ -196,7 +196,7 @@ The additional collateral given to liquidators as an incentive to perform liquid
 
 **Comptroller**
 
-```
+```js
 function liquidationIncentiveMantissa() view returns (uint)
 ```
 
@@ -204,14 +204,14 @@ function liquidationIncentiveMantissa() view returns (uint)
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 uint closeFactor = troll.liquidationIncentiveMantissa();
 ```
 
 **Web3 1.0**
 
-```
+```js
 const troll = Comptroller.at(0xABCD...);
 const closeFactor = await troll.methods.liquidationIncentiveMantissa().call();
 ```
@@ -278,7 +278,7 @@ The "COMP speed" unique to each market is an unsigned integer that specifies the
 
 The following is the formula for calculating the rate that COMP is distributed to each supported market.
 
-```
+```js
 utility = jTokenTotalBorrows * assetPrice
 
 utilityFraction = utility / sumOfAllCOMPedMarketUtilities
@@ -294,13 +294,13 @@ The compRate indicates how much COMP goes to the suppliers or borrowers, so doub
 
 **Comptroller**
 
-```
+```js
 uint public compRate;
 ```
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 
 // COMP issued per block to suppliers OR borrowers * (1 * 10 ^ 18)
@@ -315,7 +315,7 @@ uint compRatePerDayTotal = compRatePerDay * 2;
 
 **Web3 1.2.6**
 
-```
+```js
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
 
 let compRate = await comptroller.methods.compRate().call();
@@ -336,13 +336,13 @@ The speed indicates how much COMP goes to the suppliers or the borrowers, so dou
 
 **Comptroller**
 
-```
+```js
 mapping(address => uint) public compSpeeds;
 ```
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0x123...);
 address jToken = 0xabc...;
 
@@ -358,7 +358,7 @@ uint compSpeedPerDayTotal = compSpeedPerDay * 2;
 
 **Web3 1.2.6**
 
-```
+```js
 const jTokenAddress = '0xabc...';
 
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
@@ -379,7 +379,7 @@ Every Compound user accrues COMP for each block they are supplying to or borrowi
 
 **Comptroller**
 
-```
+```js
 // Claim all the COMP accrued by holder in all markets
 function claimComp(address holder) public
 
@@ -392,14 +392,14 @@ function claimComp(address[] memory holders, CToken[] memory jTokens, bool borro
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 troll.claimComp(0x1234...);
 ```
 
 **Web3 1.2.6**
 
-```
+```js
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
 await comptroller.methods.claimComp("0x1234...").send({ from: sender });
 ```
@@ -410,20 +410,20 @@ The Comptroller contract has an array called getAllMarkets that contains the add
 
 **Comptroller**
 
-```
+```js
 CToken[] public getAllMarkets;
 ```
 
 **Solidity**
 
-```
+```js
 Comptroller troll = Comptroller(0xABCD...);
 CToken jTokens[] = troll.getAllMarkets();
 ```
 
 **Web3 1.2.6**
 
-```
+```js
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
 const jTokens = await comptroller.methods.getAllMarkets().call();
 const jToken = jTokens[0]; // address of a jToken
