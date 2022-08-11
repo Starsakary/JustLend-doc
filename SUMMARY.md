@@ -45,6 +45,7 @@
 * [Backend API](developers/backend-api.md)
 * [Smart Contract API](developers/smart-contract-api.md)
 * [Audits](developers/audits.md)
+* [Interact with Tronweb](developers/interact-with-tronweb.md)
 
 ## ANNOUNCEMENT
 
