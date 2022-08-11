@@ -1,12 +1,8 @@
 # Comptroller
 
-###
-
-Comptroller
-
 ### Introduction
 
-The Comptroller is the risk management layer of the Compound protocol; it determines how much collateral a user is required to maintain, and whether (and by how much) a user can be liquidated. Each time a user interacts with a cToken, the Comptroller is asked to approve or deny the transaction.
+The Comptroller is the risk management layer of the Compound protocol; it determines how much collateral a user is required to maintain, and whether (and by how much) a user can be liquidated. Each time a user interacts with a jToken, the Comptroller is asked to approve or deny the transaction.
 
 The Comptroller maps user balances to prices (via the Price Oracle) to risk weights (called Collateral Factors) to make its determinations. Users explicitly list which assets they would like included in their risk scoring, by calling Enter Markets and Exit Market.
 
@@ -21,29 +17,29 @@ Enter into a list of markets - it is not an error to enter the same market more 
 **Comptroller**
 
 ```
-function enterMarkets(address[] calldata cTokens) returns (uint[] memory)
+function enterMarkets(address[] calldata jTokens) returns (uint[] memory)
 ```
 
 * msg.sender: The account which shall enter the given markets.
-* cTokens: The addresses of the cToken markets to enter.
+* jTokens: The addresses of the jToken markets to enter.
 * RETURN: For each market, returns an error code indicating whether or not it was entered. Each is 0 on success, otherwise an Error code.
 
 **Solidity**
 
 ```
 Comptroller troll = Comptroller(0xABCD...);
-CToken[] memory cTokens = new CToken[](2);
-cTokens[0] = CErc20(0x3FDA...);
-cTokens[1] = CEther(0x3FDB...);
-uint[] memory errors = troll.enterMarkets(cTokens);
+CToken[] memory jTokens = new CToken[](2);
+jTokens[0] = CErc20(0x3FDA...);
+jTokens[1] = CEther(0x3FDB...);
+uint[] memory errors = troll.enterMarkets(jTokens);
 ```
 
 **Web3 1.0**
 
 ```
 const troll = Comptroller.at(0xABCD...);
-const cTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];
-const errors = await troll.methods.enterMarkets(cTokens).send({from: ...});
+const jTokens = [CErc20.at(0x3FDA...), CEther.at(0x3FDB...)];
+const errors = await troll.methods.enterMarkets(jTokens).send({from: ...});
 ```
 
 ### Exit Market
@@ -53,11 +49,11 @@ Exit a market - it is not an error to exit a market which is not currently enter
 **Comptroller**
 
 ```
-function exitMarket(address cToken) returns (uint)
+function exitMarket(address jToken) returns (uint)
 ```
 
 * msg.sender: The account which shall exit the given market.
-* cTokens: The addresses of the cToken market to exit.
+* jTokens: The addresses of the jToken market to exit.
 * RETURN: 0 on success, otherwise an Error code.
 
 **Solidity**
@@ -98,12 +94,12 @@ address[] memory markets = troll.getAssetsIn(0xMyAccount);
 
 ```
 const troll = Comptroller.at(0xABCD...);
-const markets = await troll.methods.getAssetsIn(cTokens).call();
+const markets = await troll.methods.getAssetsIn(jTokens).call();
 ```
 
 ### Collateral Factor
 
-A cToken's collateral factor can range from 0-90%, and represents the proportionate increase in liquidity (borrow limit) that an account receives by minting the cToken.
+A jToken's collateral factor can range from 0-90%, and represents the proportionate increase in liquidity (borrow limit) that an account receives by minting the jToken.
 
 Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. If an asset has a 0% collateral factor, it can't be used as collateral (or seized in liquidation), though it can still be borrowed.
 
@@ -112,11 +108,11 @@ Collateral factors can be increased (or decreased) through Compound Governance, 
 **Comptroller**
 
 ```
-function markets(address cTokenAddress) view returns (bool, uint, bool)
+function markets(address jTokenAddress) view returns (bool, uint, bool)
 ```
 
-* cTokenAddress: The address of the cToken to check if listed and get the collateral factor for.
-* RETURN: Tuple of values (isListed, collateralFactorMantissa, isComped); isListed represents whether the comptroller recognizes this cToken; collateralFactorMantissa, scaled by 1e18, is multiplied by a supply balance to determine how much value can be borrowed. The isComped boolean indicates whether or not suppliers and borrowers are distributed COMP tokens.
+* jTokenAddress: The address of the jToken to check if listed and get the collateral factor for.
+* RETURN: Tuple of values (isListed, collateralFactorMantissa, isComped); isListed represents whether the comptroller recognizes this jToken; collateralFactorMantissa, scaled by 1e18, is multiplied by a supply balance to determine how much value can be borrowed. The isComped boolean indicates whether or not suppliers and borrowers are distributed COMP tokens.
 
 **Solidity**
 
@@ -196,7 +192,7 @@ const closeFactor = await troll.methods.closeFactorMantissa().call();
 
 ### Liquidation Incentive
 
-The additional collateral given to liquidators as an incentive to perform liquidation of underwater accounts. A portion of this is given to the collateral cToken reserves as determined by the seize share. The seize share is assumed to be 0 if the cToken does not have a protocolSeizeShareMantissa constant. For example, if the liquidation incentive is 1.08, and the collateral's seize share is 1.028, liquidators receive an extra 5.2% of the borrower's collateral for every unit they close, and the remaining 2.8% is added to the cToken's reserves.
+The additional collateral given to liquidators as an incentive to perform liquidation of underwater accounts. A portion of this is given to the collateral jToken reserves as determined by the seize share. The seize share is assumed to be 0 if the jToken does not have a protocolSeizeShareMantissa constant. For example, if the liquidation incentive is 1.08, and the collateral's seize share is 1.028, liquidators receive an extra 5.2% of the borrower's collateral for every unit they close, and the remaining 2.8% is added to the jToken's reserves.
 
 **Comptroller**
 
@@ -224,8 +220,8 @@ const closeFactor = await troll.methods.liquidationIncentiveMantissa().call();
 
 | Event                                         | Description                             |
 | --------------------------------------------- | --------------------------------------- |
-| MarketEntered(CToken cToken, address account) | Emitted upon a successful Enter Market. |
-| MarketExited(CToken cToken, address account)  | Emitted upon a successful Exit Market.  |
+| MarketEntered(CToken jToken, address account) | Emitted upon a successful Enter Market. |
+| MarketExited(CToken jToken, address account)  | Emitted upon a successful Exit Market.  |
 
 ### Error Codes
 
@@ -283,7 +279,7 @@ The "COMP speed" unique to each market is an unsigned integer that specifies the
 The following is the formula for calculating the rate that COMP is distributed to each supported market.
 
 ```
-utility = cTokenTotalBorrows * assetPrice
+utility = jTokenTotalBorrows * assetPrice
 
 utilityFraction = utility / sumOfAllCOMPedMarketUtilities
 
@@ -334,7 +330,7 @@ const compRatePerDayTotal = compRatePerDay * 2;
 
 #### COMP Distributed Per Block (Single Market)
 
-The Comptroller contract has a mapping called compSpeeds. It maps cToken addresses to an integer of each market’s COMP distribution per Ethereum block. The integer indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers. The value is the amount of COMP (in wei), per block, allocated for the market. Note that not every market has COMP distributed to its participants (see Market Metadata).
+The Comptroller contract has a mapping called compSpeeds. It maps jToken addresses to an integer of each market’s COMP distribution per Ethereum block. The integer indicates the rate at which the protocol distributes COMP to markets’ suppliers or borrowers. The value is the amount of COMP (in wei), per block, allocated for the market. Note that not every market has COMP distributed to its participants (see Market Metadata).
 
 The speed indicates how much COMP goes to the suppliers or the borrowers, so doubling this number shows how much COMP goes to market suppliers and borrowers combined. The code examples implement reading the amount of COMP distributed, per Ethereum block, to a single market.
 
@@ -348,10 +344,10 @@ mapping(address => uint) public compSpeeds;
 
 ```
 Comptroller troll = Comptroller(0x123...);
-address cToken = 0xabc...;
+address jToken = 0xabc...;
 
 // COMP issued per block to suppliers OR borrowers * (1 * 10 ^ 18)
-uint compSpeed = troll.compSpeeds(cToken);
+uint compSpeed = troll.compSpeeds(jToken);
 
 // Approximate COMP issued per day to suppliers OR borrowers * (1 * 10 ^ 18)
 uint compSpeedPerDay = compSpeed * 4 * 60 * 24;
@@ -363,11 +359,11 @@ uint compSpeedPerDayTotal = compSpeedPerDay * 2;
 **Web3 1.2.6**
 
 ```
-const cTokenAddress = '0xabc...';
+const jTokenAddress = '0xabc...';
 
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
 
-let compSpeed = await comptroller.methods.compSpeeds(cTokenAddress).call();
+let compSpeed = await comptroller.methods.compSpeeds(jTokenAddress).call();
 compSpeed = compSpeed / 1e18;
 
 // COMP issued to suppliers OR borrowers
@@ -388,10 +384,10 @@ Every Compound user accrues COMP for each block they are supplying to or borrowi
 function claimComp(address holder) public
 
 // Claim all the COMP accrued by holder in specific markets
-function claimComp(address holder, CToken[] memory cTokens) public
+function claimComp(address holder, CToken[] memory jTokens) public
 
 // Claim all the COMP accrued by specific holders in specific markets for their supplies and/or borrows
-function claimComp(address[] memory holders, CToken[] memory cTokens, bool borrowers, bool suppliers) public
+function claimComp(address[] memory holders, CToken[] memory jTokens, bool borrowers, bool suppliers) public
 ```
 
 **Solidity**
@@ -410,7 +406,7 @@ await comptroller.methods.claimComp("0x1234...").send({ from: sender });
 
 ### Market Metadata
 
-The Comptroller contract has an array called getAllMarkets that contains the addresses of each cToken contract. Each address in the getAllMarkets array can be used to fetch a metadata struct in the Comptroller’s markets constant. See the [Comptroller Storage contract](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerStorage.sol) for the Market struct definition.
+The Comptroller contract has an array called getAllMarkets that contains the addresses of each jToken contract. Each address in the getAllMarkets array can be used to fetch a metadata struct in the Comptroller’s markets constant. See the [Comptroller Storage contract](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerStorage.sol) for the Market struct definition.
 
 **Comptroller**
 
@@ -422,13 +418,13 @@ CToken[] public getAllMarkets;
 
 ```
 Comptroller troll = Comptroller(0xABCD...);
-CToken cTokens[] = troll.getAllMarkets();
+CToken jTokens[] = troll.getAllMarkets();
 ```
 
 **Web3 1.2.6**
 
 ```
 const comptroller = new web3.eth.Contract(comptrollerAbi, comptrollerAddress);
-const cTokens = await comptroller.methods.getAllMarkets().call();
-const cToken = cTokens[0]; // address of a cToken
+const jTokens = await comptroller.methods.getAllMarkets().call();
+const jToken = jTokens[0]; // address of a jToken
 ```
