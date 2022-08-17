@@ -41,6 +41,7 @@
 * [JustLend Protocol Contracts](developers/justlend-protocol-contracts/README.md)
   * [jTokens](developers/justlend-protocol-contracts/jtokens.md)
   * [Comptroller](developers/justlend-protocol-contracts/comptroller.md)
+* [Governance](developers/governance.md)
 * [Interacting Contracts with Tronweb](developers/interacting-contracts-with-tronweb.md)
 * [GitHub](https://github.com/justlend)
 * [Backend API](developers/backend-api.md)
