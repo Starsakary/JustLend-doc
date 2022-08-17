@@ -4,10 +4,12 @@ JustLend DAO protocol is governed and upgraded by JST holders. There are three c
 
 The governance of the JustLend DAO protocol is through proposals, whose process can be summarized as proposal posting-voting-taking effect. Several parameters are included in the process:
 
-| Param             | Value     | Description                                            |
-| ----------------- | --------- | ------------------------------------------------------ |
-| quorumVotes       | 600000000 | The least for-votes for a proposal to take effect      |
-| votingPeriod      | 86400     | Voting duration(block counts)                          |
-| proposalThreshold | 200000000 | The least votes that a proposer must possess           |
-| votingDelay       | 1         | The wating duration before voting starts(block counts) |
-|                   |           |                                                        |
+| Param                 | Value                              | Description                                                                            |
+| --------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| quorumVotes           | 600000000                          | The least for-votes for a proposal to take effect                                      |
+| votingPeriod          | 86400                              | Voting duration(block counts)                                                          |
+| proposalThreshold     | 200000000                          | The least votes that a proposer must possess                                           |
+| votingDelay           | 1                                  | The wating duration before voting starts(block counts)                                 |
+| proposalMaxOperations | 10                                 | Action maximum within a proposal                                                       |
+| proposalCount         | 11                                 | Current proposal count                                                                 |
+| guardian              | T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb | The guardian can cancel an executed proposal. The current guardian is the blackhole(0) |
