@@ -35,3 +35,21 @@ const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privKey)
 
 ## Interacting with Contracts
 
+You are able to load a smart contract in a JavaScript variable. Take `Comptroller` as an example:
+
+```javascript
+// The main net address of Comptroller is : TJZi9eWzCLGBi9tuwvPxnaZTGa2iUpRc8v
+const comptroller = tronWeb.contract().at("TJZi9eWzCLGBi9tuwvPxnaZTGa2iUpRc8v")
+```
+
+All set. Now you can call contract methods with `comptroller`.
+
+### Calling Contract Methods
+
+You can call `pure` and `view` methods with `methodname.call()`. Take `getAccountLiquidity` as an example:
+
+```javascript
+const result = await comptroller.getAccountLiquidity("the account to calculate liquidity").call()
+```
+
+When calling other methods, simply change `getAccountLiquidity` to the corresponding method name and input the correct parameters within the brackets.

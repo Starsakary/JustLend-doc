@@ -16,12 +16,12 @@ Enter into a list of markets - it is not an error to enter the same market more 
 
 **Comptroller**
 
-```javascript
- function enterMarkets(address[] memory cTokens) public returns (uint[] memory)
+```js
+function enterMarkets(address[] calldata jTokens) returns (uint[] memory)
 ```
 
 * msg.sender: The account which shall enter the given markets.
-* cTokens: The addresses of the jToken markets to enter.
+* jTokens: The addresses of the jToken markets to enter.
 * RETURN: For each market, returns an error code indicating whether or not it was entered. Each is 0 on success, otherwise an Error code.
 
 **Solidity**
@@ -34,7 +34,7 @@ jTokens[1] = CEther(0x3FDB...);
 uint[] memory errors = troll.enterMarkets(jTokens);
 ```
 
-**Tronweb**
+**Web3 1.0**
 
 ```js
 const troll = Comptroller.at(0xABCD...);
