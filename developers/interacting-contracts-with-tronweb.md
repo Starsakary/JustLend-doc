@@ -46,6 +46,8 @@ All set. Now you can call contract methods with `comptroller`.
 
 ### Calling Contract Methods
 
+#### Constant Calls
+
 You can call `pure` and `view` methods with `methodname.call()`. Take `getAccountLiquidity` as an example:
 
 ```javascript
@@ -53,3 +55,15 @@ const result = await comptroller.getAccountLiquidity("the account to calculate l
 ```
 
 When calling other methods, simply change `getAccountLiquidity` to the corresponding method name and input the correct parameters within the brackets.
+
+{% hint style="info" %}
+If a contract's ABI is not stored on the blockchain, ABI should be manually loaded and `_isConstant: true`is required, like below.
+{% endhint %}
+
+```javascript
+comptroller.loadAbi(ABI JSON)
+const result = await comptroller.methodname(params).call(_isConstant:true)
+```
+
+#### Trigger Calls
+
