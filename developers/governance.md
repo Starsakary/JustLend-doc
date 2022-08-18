@@ -28,7 +28,7 @@ An account must possess at least 200,000,000 votes to create governance proposal
 
 ## Relevant Methods
 
-### Creating Proposals
+### Proposals
 
 #### propose()
 
