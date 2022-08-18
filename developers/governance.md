@@ -160,3 +160,30 @@ const {0: targets, 1: values, 2: signatures, 3: calldatas} = governanceAlpha.get
   shouldPollResponse:true
 });
 ```
+
+#### getReceipt()
+
+Contract: GovernanceAlpha
+
+```javascript
+function getReceipt(uint proposalId, address voter) public view returns (Receipt memory)
+```
+
+Calling this methods gets the votes of a specified voter on a proposal.
+
+| Parameter  | Type    | Description                      |
+| ---------- | ------- | -------------------------------- |
+| proposalId | uint    | ID of the specified proposal     |
+| voter      | address | Address of the specified account |
+
+| Returns | Type   | Description                                                        |
+| ------- | ------ | ------------------------------------------------------------------ |
+| Receipt | struct | <p>bool hasVoted <br>bool support<br>uint96 votes //vote count</p> |
+
+```javascript
+const {hasVoted, support, votes} = governanceAlpha.getReceipt(proposalId, voter).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
