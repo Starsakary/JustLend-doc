@@ -154,11 +154,7 @@ Calling this method gets the actions of an exact proposal.
 Returns: The ID of this proposal
 
 ```javascript
-const {0: targets, 1: values, 2: signatures, 3: calldatas} = governanceAlpha.getActions(proposalId).send({
-  feeLimit:10_000_000_000,
-  callValue:0,
-  shouldPollResponse:true
-});
+const {0: targets, 1: values, 2: signatures, 3: calldatas} = governanceAlpha.getActions(proposalId).call();
 ```
 
 #### getReceipt()
@@ -176,14 +172,50 @@ Calling this methods gets the votes of a specified voter on a proposal.
 | proposalId | uint    | ID of the specified proposal     |
 | voter      | address | Address of the specified account |
 
-| Returns | Type   | Description                                                        |
-| ------- | ------ | ------------------------------------------------------------------ |
-| Receipt | struct | <p>bool hasVoted <br>bool support<br>uint96 votes //vote count</p> |
+| Returns | Type   | Description                                                                                                                                                                                            |
+| ------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Receipt | struct | <p>bool hasVoted <mark style="color:blue;">// voted or not</mark><br>bool support <mark style="color:blue;">// for or against</mark><br>uint96 votes <mark style="color:blue;">//vote count</mark></p> |
 
 ```javascript
-const {hasVoted, support, votes} = governanceAlpha.getReceipt(proposalId, voter).send({
-  feeLimit:10_000_000_000,
-  callValue:0,
-  shouldPollResponse:true
-});
+const {hasVoted, support, votes} = governanceAlpha.getReceipt(proposalId, voter).call();
 ```
+
+#### state()
+
+Contract: GovernanceAlpha
+
+```javascript
+function state(uint proposalId) public view returns (ProposalState)
+```
+
+Calling this method returns the state of a specified proposal.
+
+| Parameter  | Type | Description                  |
+| ---------- | ---- | ---------------------------- |
+| proposalId | uint | ID of the specified proposal |
+
+| Returns       | Type | Description                                                                                    |
+| ------------- | ---- | ---------------------------------------------------------------------------------------------- |
+| ProposalState | enum | <p>Pending<br>Active<br>Canceled<br>Defeated<br>Succeeded<br>Queued<br>Expired<br>Executed</p> |
+
+```javascript
+const result = governanceAlpha.state(proposalId).call();
+```
+
+### Poll & Vote
+
+#### castVote()
+
+Contract: GovernanceAlpha
+
+```javascript
+function castVote(uint proposalId, uint votes, bool support) public
+```
+
+Calling this method casts a vote on a proposal. The voting weight will be calculated at the time the proposal's state becomes active.
+
+| Parameter  | Type | Description                    |
+| ---------- | ---- | ------------------------------ |
+| proposalId | uint | ID of the proposal to vote     |
+| votes      | uint | Number of the votes to be cast |
+| support    | bool | For or against                 |
