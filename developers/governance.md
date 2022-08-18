@@ -105,3 +105,58 @@ const result = governanceAlpha.execute(proposalId).send({
   shouldPollResponse:true
 });
 ```
+
+#### cancel()
+
+Contract: GovernanceAlpha
+
+```javascript
+function cancel(uint proposalId) public
+```
+
+Calling this function cancels a proposal. A proposal can be cancelled at any time **prior to its execution**.
+
+| Parameter  | Type | Description                        |
+| ---------- | ---- | ---------------------------------- |
+| proposalId | uint | ID of the proposal to be cancelled |
+
+Returns: None, reverts on error.
+
+```javascript
+const result = governanceAlpha.cancel(proposalId).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
+
+#### getActions()
+
+Contract: GovernanceAlpha
+
+```javascript
+function getActions(uint proposalId) public view returns (address[] memory targets, uint[] memory values, string[] memory signatures, bytes[] memory calldatas)
+```
+
+Calling this method gets the actions of an exact proposal.
+
+| Parameter  | Type | Description        |
+| ---------- | ---- | ------------------ |
+| proposalId | uint | ID of the proposal |
+
+| Returns    | Type       | Description                                                     |
+| ---------- | ---------- | --------------------------------------------------------------- |
+| targets    | address\[] | Target addresses for calls to be made during proposal execution |
+| values     | uint\[]    | Values to be passed to the calls                                |
+| signatures | string\[]  | Function signatures                                             |
+| calldatas  | bytes\[]   | Data for each function                                          |
+
+Returns: The ID of this proposal
+
+```javascript
+const {0: targets, 1: values, 2: signatures, 3: calldatas} = governanceAlpha.getActions(proposalId).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
