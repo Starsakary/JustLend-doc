@@ -53,3 +53,17 @@ const result = comptroller.exitMarket(address).send({
   shouldPollResponse:true
 });
 ```
+
+#### getAssetsIn()
+
+```javascript
+function getAssetsIn(address account) external view returns (CToken[] memory)
+```
+
+Calling this method returns a list of already entered markets.
+
+| Parameter | Type    | Description                                       |
+| --------- | ------- | ------------------------------------------------- |
+| account   | address | The markets this account enters will be returned  |
+
+Returns: Markets have been entered by the specified address.
