@@ -32,7 +32,7 @@ An account must possess at least 200,000,000 votes to create governance proposal
 
 #### propose()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function propose(address[] memory targets, uint[] memory values, string[] memory signatures, bytes[] memory calldatas, string memory description) public returns (uint)
@@ -51,7 +51,7 @@ Calling this method creates a proposal to change & update the JustLend DAO proto
 Returns: The ID of this proposal
 
 ```javascript
-const result = governanceAlpha.propose(targets, values, signatures, calldatas, description).send({
+const result = governorAlpha.propose(targets, values, signatures, calldatas, description).send({
   feeLimit:10_000_000_000,
   callValue:0,
   shouldPollResponse:true
@@ -60,7 +60,7 @@ const result = governanceAlpha.propose(targets, values, signatures, calldatas, d
 
 #### queue()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function queue(uint proposalId) public
@@ -75,7 +75,7 @@ Calling this method moves a **successful** proposal into the Timelock waiting pe
 Returns: None, reverts on error.
 
 ```javascript
-const result = governanceAlpha.queue(proposalId).send({
+const result = governorAlpha.queue(proposalId).send({
   feeLimit:10_000_000_000,
   callValue:0,
   shouldPollResponse:true
@@ -84,7 +84,7 @@ const result = governanceAlpha.queue(proposalId).send({
 
 #### execute()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function execute(uint proposalId) public payable
@@ -99,7 +99,7 @@ Calling this method executes the proposal whose waiting period has already been 
 Returns: None, reverts on error.
 
 ```javascript
-const result = governanceAlpha.execute(proposalId).send({
+const result = governorAlpha.execute(proposalId).send({
   feeLimit:10_000_000_000,
   callValue:0,
   shouldPollResponse:true
@@ -108,7 +108,7 @@ const result = governanceAlpha.execute(proposalId).send({
 
 #### cancel()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function cancel(uint proposalId) public
@@ -123,7 +123,7 @@ Calling this function cancels a proposal. A proposal can be cancelled at any tim
 Returns: None, reverts on error.
 
 ```javascript
-const result = governanceAlpha.cancel(proposalId).send({
+const result = governorAlpha.cancel(proposalId).send({
   feeLimit:10_000_000_000,
   callValue:0,
   shouldPollResponse:true
@@ -132,7 +132,7 @@ const result = governanceAlpha.cancel(proposalId).send({
 
 #### getActions()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function getActions(uint proposalId) public view returns (address[] memory targets, uint[] memory values, string[] memory signatures, bytes[] memory calldatas)
@@ -154,18 +154,18 @@ Calling this method gets the actions of an exact proposal.
 Returns: The ID of this proposal
 
 ```javascript
-const {0: targets, 1: values, 2: signatures, 3: calldatas} = governanceAlpha.getActions(proposalId).call();
+const {0: targets, 1: values, 2: signatures, 3: calldatas} = governorAlpha.getActions(proposalId).call();
 ```
 
 #### getReceipt()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function getReceipt(uint proposalId, address voter) public view returns (Receipt memory)
 ```
 
-Calling this methods gets the votes of a specified voter on a proposal.
+Calling this method gets the votes of a specified voter on a proposal.
 
 | Parameter  | Type    | Description                      |
 | ---------- | ------- | -------------------------------- |
@@ -177,12 +177,12 @@ Calling this methods gets the votes of a specified voter on a proposal.
 | Receipt | struct | <p>bool hasVoted <mark style="color:blue;">// voted or not</mark><br>bool support <mark style="color:blue;">// for or against</mark><br>uint96 votes <mark style="color:blue;">//vote count</mark></p> |
 
 ```javascript
-const {hasVoted, support, votes} = governanceAlpha.getReceipt(proposalId, voter).call();
+const {hasVoted, support, votes} = governorAlpha.getReceipt(proposalId, voter).call();
 ```
 
 #### state()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function state(uint proposalId) public view returns (ProposalState)
@@ -199,14 +199,14 @@ Calling this method returns the state of a specified proposal.
 | ProposalState | enum | <p>Pending<br>Active<br>Canceled<br>Defeated<br>Succeeded<br>Queued<br>Expired<br>Executed</p> |
 
 ```javascript
-const result = governanceAlpha.state(proposalId).call();
+const result = governorAlpha.state(proposalId).call();
 ```
 
 ### Poll & Vote
 
 #### castVote()
 
-Contract: GovernanceAlpha
+Contract: GovernorAlpha
 
 ```javascript
 function castVote(uint proposalId, uint votes, bool support) public
@@ -219,3 +219,42 @@ Calling this method casts a vote on a proposal. The voting weight will be calcul
 | proposalId | uint | ID of the proposal to vote     |
 | votes      | uint | Number of the votes to be cast |
 | support    | bool | For or against                 |
+
+Returns: None, revers on error.
+
+```javascript
+const result = governorAlpha.castVote(proposalId,votes,support).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
+
+#### castVoteBySig()
+
+Contract: GovernanceAlpha
+
+```javascript
+function castVoteBySig(uint proposalId, uint votes, bool support, uint8 v, bytes32 r, bytes32 s) public
+```
+
+Calling this method casts votes on a specified proposal. Comparing with `castVote()`, this method allows offline signature.
+
+| Parameter  | Type    | Description                      |
+| ---------- | ------- | -------------------------------- |
+| proposalId | uint    | ID of the proposal to vote       |
+| votes      | uint    | Number of the votes to be cast   |
+| support    | bool    | For or against                   |
+| v          | uint8   | Recover byte of the signature    |
+| r          | bytes32 | Half of the ECDSA signature pair |
+| s          | bytes32 | Half of the ECDSA signature pair |
+
+Returns: None, reverts on error.
+
+```javascript
+const result = governorAlpha.castVote(proposalId,votes,support,v,r,s).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
