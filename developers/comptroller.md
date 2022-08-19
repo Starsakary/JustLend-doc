@@ -96,3 +96,24 @@ const {0: isListed, 1: collateralFactorMantissa, 2: isComped} = comptroller.mark
 
 ### Collateral & Liquidation
 
+#### getAccountLiquidity()
+
+```javascript
+function getAccountLiquidity(address account) public view returns (uint, uint, uint)
+```
+
+Calling this method returns the liquidity and shortfall of a user.&#x20;
+
+| Parameter | Type    | Description           |
+| --------- | ------- | --------------------- |
+| account   | address | Address to be queried |
+
+| Returns   | Type  | Description                                                  |
+| --------- | ----- | ------------------------------------------------------------ |
+| error     | uint  | 0 for success, otherwise an error code                       |
+| liquidity | uint  | current liquidity                                            |
+| shortfall | uint  | The shortfall value of the account's collateral requirement  |
+
+```
+const {0: error, 1: liquidity, 2: shortfall} = comptroller.getAccountLiquidity(account).call();
+```
