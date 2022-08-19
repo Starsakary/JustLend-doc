@@ -67,3 +67,32 @@ Calling this method returns a list of already entered markets.
 | account   | address | The markets this account enters will be returned  |
 
 Returns: Markets have been entered by the specified address.
+
+```javascript
+const result = comptroller.getAssetsIn(account).call();
+```
+
+#### markets()
+
+```javascript
+function markets(address cTokenAddress) view returns (bool, uint, bool)
+```
+
+Calling this method returns the status of a market(isListed, collateralFactorMantissa, comped)
+
+| Parameter     | Type    | Description    |
+| ------------- | ------- | -------------- |
+| cTokenAddress | address | Market address |
+
+| Returns                  | Type | Description                                         |
+| ------------------------ | ---- | --------------------------------------------------- |
+| isListed                 | bool | Whether recognized by comptroller                   |
+| collateralFactorMantissa | uint | The value can be borrowed(scaled by 1e18)           |
+| comped                   | bool | Whether suppliers & borrowers can get jst dividends |
+
+```javascript
+const {0: isListed, 1: collateralFactorMantissa, 2: isComped} = comptroller.markets(address).call();
+```
+
+### Collateral & Liquidation
+
