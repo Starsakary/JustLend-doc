@@ -114,6 +114,6 @@ Calling this method returns the liquidity and shortfall of a user.&#x20;
 | liquidity | uint  | current liquidity                                            |
 | shortfall | uint  | The shortfall value of the account's collateral requirement  |
 
-```
+```javascript
 const {0: error, 1: liquidity, 2: shortfall} = comptroller.getAccountLiquidity(account).call();
 ```
