@@ -43,7 +43,7 @@
   * [Comptroller](developers/justlend-protocol-contracts/comptroller.md)
 * [Governance](developers/governance.md)
 * [Comptroller](developers/comptroller.md)
-* [Integration JustLend DAO Protocol](developers/integration-justlend-dao-protocol.md)
+* [Integration JustLend DAO Protocol](developers/interacting-contracts-with-tronweb.md)
 * [GitHub](https://github.com/justlend)
 * [Backend API](developers/backend-api.md)
 * [Smart Contract API](developers/smart-contract-api.md)

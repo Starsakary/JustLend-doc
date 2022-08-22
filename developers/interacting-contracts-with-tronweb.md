@@ -1,4 +1,4 @@
-# Interacting Contracts with Tronweb
+# Integration JustLend DAO Protocol
 
 [Tronweb](https://github.com/tronprotocol/tronweb) is a JavaScript SDK for TRON. It is designed for web browsers, Node.js and IoT devices. If you are familiar with web3, Tronweb will bring you the same brilliant experience.
 
@@ -67,3 +67,20 @@ const result = await comptroller.methodname(params).call(_isConstant:true)
 
 #### Trigger Calls
 
+Calls that modify on-chain data are called trigger calls. Take `castVote()` as an example:
+
+```javascript
+const result = governorAlpha.castVote(proposalId,votes,support).send({
+  feeLimit:10_000_000_000,
+  callValue:0,
+  shouldPollResponse:true
+});
+```
+
+There are several available parameters in a trigger call:
+
+| Parameter          | Description                                                                                                                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| feeLimit           | <p>The maximum energy can be used during a trigger call(in 10^-6 TRX, or sun)<br>Please refer to <a href="https://developers.tron.network/docs/resource-model#energy">TRON Energy Explanation</a></p> |
+| callValue          | The number of TRX to be sent in the transaction(in 10^-6 TRX, or sun)                                                                                                                                 |
+| shouldPollResponse | Returns after confirmation if set as `true`                                                                                                                                                           |
