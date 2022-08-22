@@ -99,7 +99,7 @@ const {0: isListed, 1: collateralFactorMantissa, 2: isComped} = comptroller.mark
 #### getAccountLiquidity()
 
 ```javascript
-function getAccountLiquidity(address account) public view returns (uint, uint, uint)
+function getAccountLiquidity(address account) public view returns (uint256, uint256, uint256)
 ```
 
 Calling this method returns the liquidity and shortfall of a user.&#x20;
