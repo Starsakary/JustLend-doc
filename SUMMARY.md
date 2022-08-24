@@ -49,6 +49,7 @@
 * [Smart Contract API](developers/smart-contract-api.md)
 * [Audits](developers/audits.md)
 * [Interact with Tronweb](developers/interact-with-tronweb.md)
+* [Price Oracle](developers/price-oracle.md)
 
 ## ANNOUNCEMENT
 
