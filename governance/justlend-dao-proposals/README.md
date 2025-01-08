@@ -1,2 +1,0 @@
-# JustLend DAO Proposals
-
