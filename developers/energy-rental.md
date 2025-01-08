@@ -22,8 +22,6 @@ $$
 
 **Parameters:**
 
-To determine the value of `trxAmount`, use the following formula:
-
 *   To determine the value of `trxAmount`, use the following formula:
 
     $$
