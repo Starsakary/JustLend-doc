@@ -23,10 +23,13 @@ Liquidation occurs when a borrower’s risk value exceeds 100, indicating that t
 
 
 
-### The RC Testing for Liquidation
+### Liquidation Tool
 
 Liquidation will be triggered when the risk value of your positions hits 100. The liquidator will settle the debt (in the borrowed token), take away the supplied asset (in the corresponding jToken), and earn a liquidation reward equal to 8% of the repaid debt value. It should be noted that each liquidation can only cover the debt of one token.&#x20;
 
 As a borrower, please keep a close eye on your risk value to prevent liquidation. Once liquidation occurs, you will find a record of your jTokens being transferred out of your wallet.&#x20;
 
-The RC testing for liquidation has been launched on JustLend DAO. [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdEHdWYniUlE7haEmHpxHtN6TiHiBQQbVgyaQeTArtUt1a4YQ/viewform) if you want to apply to become an RC tester, participate in liquidation, and earn the 8% liquidation rewards.
+{% hint style="info" %}
+Before you proceed to use the liquidation tool, please be advised that you must first agree to the terms outlined in the **\<Liquidation Tool Disclaimer>**. This disclaimer is designed to inform you of the risks, responsibilities, and conditions associated with the use of liquidation tool.\
+By proceeding to use the liquidation tool, you confirm that you have read, understood, and accept the terms of the disclaimer. If you do not agree with any part of the disclaimer, you are not permitted to utilize liquidation tool and discontinue use immediately.
+{% endhint %}

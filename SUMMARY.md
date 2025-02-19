@@ -41,5 +41,6 @@
 * [Security & Audits](resources/security-and-audits/README.md)
   * [Supply & Borrow Market](https://justlend.org/docs/justlend_audit_en.pdf)
   * [Staked TRX](https://justlend.org/docs/justlend_strx_audit_en.pdf)
+* [Risk Warning](resources/risk-warning.md)
 * [Terms of Service](https://justlend.org/docs/JustLend_Terms_of_Use_en.pdf)
 * [Privacy Policy](https://justlend.org/docs/JustLend_Privacy_Policy_en.pdf)
